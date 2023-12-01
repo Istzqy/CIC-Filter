@@ -1,1 +1,6 @@
-该文件夹涉及  CIC滤波器相关Matlab仿真与Verilog仿真1
+该文件夹涉及CIC滤波器相关Matlab仿真与Verilog仿真
+CIC_Filter.m 关于CIC滤波器特性的相关仿真m代码（幅频特性、阶数与旁瓣衰减关联）
+CIC_Filter_R128_N5.fda 利用Matlab中的Filter Designer工具设计的5阶，128抽取的CIC滤波器
+HDL文件夹 是利用上述CIC_Filter_R128_N5.fda设计的滤波器导出的verilog HDL 代码及其testbench文件
+
+
