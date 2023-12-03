@@ -136,18 +136,18 @@ plot(w,20*log10(abs(h).^Q));
 xlabel('Normalized Frequency (\times\pi rad/sample)');
 ylabel('|H(e^j^\omega))|(dB)');
 hold on;
-Q = 2; 
-plot(w,20*log10(abs(h).^Q));
-hold on;
+% Q = 2; 
+% plot(w,20*log10(abs(h).^Q));
+% hold on;
 Q = 3; 
 plot(w,20*log10(abs(h).^Q));
 hold on;
-Q = 4; 
-plot(w,20*log10(abs(h).^Q));
-hold on;
+% Q = 4; 
+% plot(w,20*log10(abs(h).^Q));
+% hold on;
 Q = 5; 
 plot(w,20*log10(abs(h).^Q));
-legend('Q=1','Q=2','Q=3','Q=4','Q=5');
+legend('Q=1','Q=3','Q=5');
 grid on;
 
 
@@ -162,7 +162,7 @@ figure(1);
     a = [abs(c+2)];
     %zplane(b,a);
     % % 数字滤波器频率响应
-    [h,w] = freqz(b,a,4096);
+    [h,w] = freqz(b,a,8192);
     n = length(w);
     w=w/pi;
     plot(w,20*log10(abs(h)));
@@ -174,42 +174,119 @@ xlabel('Normalized Frequency (\times\pi rad/sample)');
 ylabel('|H(e^j^\omega))|(dB)');
 
 
-%% CIC滤波器（级联数Q = 5，抽取因子M = 128 ） + ISOP二阶补偿器
+%% CIC滤波器（级联数Q = 5，抽取因子R = 128 ） + ISOP二阶补偿器
 
 clc;
 clear;
 % CIC设计
-M = 128;
-b = [1 repelem(0,M-1) -1];
+R = 128;
+b = [1 repelem(0,R-1) -1];
 a = [1 -1];
 %数字滤波器频率响应
-[Hcic,w] = freqz(b,a,4096);
+[Hcic,w] = freqz(b,a,8192);
 %为了单位表示方便
 w = w/pi;
+%通带截止频率
+fc = 1e3;
+%采样频率
+fs = 512e3;
+%归一化通带截止角频率(为了归一化，除以了pi，实际角频率是无需乘pi的)
+wc = (fc*2*pi/fs)/pi;
+%通带点数
+nc = round(wc/((fs/2)*2*pi/fs/8192/pi));
 %级联数为5的CIC幅频特性
 Q = 5;
 figure(1);
-plot(w,20*log10(abs(Hcic).^Q));
+plot(w,20*log10((abs(Hcic).^Q)/(abs(Hcic(2)).^Q)));
+xlabel('Normalized Frequency (\times\pi rad/sample)');
+ylabel('Normalized |H(e^j^\omega))|(dB)');
 hold on ;
-
-
-%ISOP设计
-c = -2.0001;
+c= -2.0002;
 b1 = [1 c 1];
 a1 = [abs(c+2)];
-% % 数字滤波器频率响应
-[Hisop,wisop] = freqz(b1,a1,4096);
-
+% 数字滤波器频率响应
+[Hisop,wisop] = freqz(b1,a1,8192);
 wisop = wisop /pi;
-plot(w,20*log10(abs(Hisop)));
+%ISOP的幅频响应
+plot(w,20*log10(abs(Hisop)/abs(Hisop(2))));
 hold on ;
 
-plot(w,20*log10(abs(Hisop).*(abs(Hcic).^Q)));
+%CIC+ISOP的幅频响应
+HC_P=abs(Hisop).*(abs(Hcic).^Q);
+%HC_P=abs(Hisop.*Hcic).^Q;
+plot(w,20*log10(HC_P/HC_P(2)));
 
 legend('CIC','ISOP','CIC+ISOP');
 grid on;
 xlabel('Normalized Frequency (\times\pi rad/sample)');
+ylabel('Normalized |H(e^j^\omega))|(dB)');
+
+
+%通带内幅频特性
+figure(2);
+plot(w(1:nc)*fs/2,20*log10(abs(Hcic(1:nc)).^Q/(abs(Hcic(2)).^Q)));
+hold on ;
+plot(w(1:nc)*fs/2,20*log10(abs(Hisop(1:nc)/abs(Hisop(2)))));
+hold on ;
+plot(w(1:nc)*fs/2,20*log10(HC_P(1:nc)/HC_P(2)));
+legend('CIC','ISOP','CIC+ISOP');
+grid on;
+xlabel('Normalized Frequency (\times\pi rad/sample)');
 ylabel('|H(e^j^\omega))|(dB)');
+
+
+%% 对比不同C值情况下，补偿器作用结果
+
+clc;
+clear;
+% CIC设计
+R = 128;
+b = [1 repelem(0,R-1) -1];
+a = [1 -1];
+%数字滤波器频率响应
+[Hcic,w] = freqz(b,a,8192);
+%为了单位表示方便
+w = w/pi;
+%通带截止频率
+fc = 1e3;
+%采样频率
+fs = 512e3;
+%归一化通带截止角频率(为了归一化，除以了pi，实际角频率是无需乘pi的)
+wc = (fc*2*pi/fs)/pi;
+%通带点数
+nc = round(wc/((fs/2)*2*pi/fs/8192/pi));
+%级联数为5的CIC幅频特性
+Q = 5;
+figure(1);
+%ISOP系数C设计:判定条件是通带内纹波最小
+% 
+delamin = 10;
+for c= -2.00001:-0.00001:-2.2
+    b1 = [1 c 1];
+    a1 = [abs(c+2)];
+    % 数字滤波器频率响应
+    [Hisop,wisop] = freqz(b1,a1,8192);
+    wisop = wisop /pi;
+    HC_P=abs(Hisop).*(abs(Hcic).^Q);
+    HC_P_fc = HC_P(1:nc) ;
+    minh = min(20*log10(HC_P_fc/HC_P(2)));
+    maxh = max(20*log10(HC_P_fc/HC_P(2)));
+    if delamin > (maxh -minh)
+          delamin = maxh -minh ;
+          cc = c;
+    end
+    plot(w(1:nc)*fs/2,20*log10(HC_P_fc/HC_P(2)));
+    hold on
+end
+%legend('CIC','ISOP','CIC+ISOP');
+grid on;
+xlabel('Normalized Frequency (\times\pi rad/sample)');
+ylabel('|H(e^j^\omega))|(dB)');
+
+
+
+
+
 
 
 
