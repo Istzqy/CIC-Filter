@@ -5,7 +5,8 @@ HDL文件夹 是利用上述CIC_Filter_R128_N5.fda设计的滤波器导出的ver
 Cascade_CIC_Filter.m 利用M语言设计级联CIC抽取滤波器+ISOP补偿器的相关代码
 CIC_Filter_1_3_5.fig 是不同阶数CIC滤波器的幅频特性
 CIC_Filter_5Order.fig 是5阶CIC滤波器的幅频特性曲线
-CIC_Filter_ISOP.fig 是CIC滤波器+ISOP补偿器的对比幅频特性曲线
+CIC_Filter_ISOP.fig 是CIC滤波器+ISOP补偿器的对比幅频特性曲线（有误）
+CIC_Filter_ISOP_1204 CIC滤波器+ISOP补偿器（M=128）的对比幅频特性曲线
 
 
 
