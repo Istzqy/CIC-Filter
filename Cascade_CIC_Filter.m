@@ -156,9 +156,11 @@ grid on;
 clear;
 clc;
 
+R=128; % 抽取因子
+
 figure(1);
- for c=-2.1:-2:-11
-    b = [1 c 1];
+ for c=-3:-2:-11
+    b = [1 repelem(0,R-1) c repelem(0,R-1) 1];
     a = [abs(c+2)];
     %zplane(b,a);
     % % 数字滤波器频率响应
@@ -184,6 +186,7 @@ b = [1 repelem(0,R-1) -1];
 a = [1 -1];
 %数字滤波器频率响应
 [Hcic,w] = freqz(b,a,8192);
+Hcic(1,1) = length(b)-1;
 %为了单位表示方便
 w = w/pi;
 %通带截止频率
@@ -197,24 +200,27 @@ nc = round(wc/((fs/2)*2*pi/fs/8192/pi));
 %级联数为5的CIC幅频特性
 Q = 5;
 figure(1);
-plot(w,20*log10((abs(Hcic).^Q)/(abs(Hcic(2)).^Q)));
+plot(w,20*log10((abs(Hcic).^Q)/abs(Hcic(1)).^Q)); %
 xlabel('Normalized Frequency (\times\pi rad/sample)');
 ylabel('Normalized |H(e^j^\omega))|(dB)');
 hold on ;
-c= -2.0002;
-b1 = [1 c 1];
+c= -4.897;
+% b1 = [1 c 1];
+% a1 = [abs(c+2)];
+b1 = [1 repelem(0,R-1) c repelem(0,R-1) 1];
 a1 = [abs(c+2)];
 % 数字滤波器频率响应
 [Hisop,wisop] = freqz(b1,a1,8192);
+%Hisop(1,1) = length(b1)-1;
 wisop = wisop /pi;
 %ISOP的幅频响应
-plot(w,20*log10(abs(Hisop)/abs(Hisop(2))));
+plot(w,20*log10(abs(Hisop)/abs(Hisop(1))));
 hold on ;
 
 %CIC+ISOP的幅频响应
 HC_P=abs(Hisop).*(abs(Hcic).^Q);
 %HC_P=abs(Hisop.*Hcic).^Q;
-plot(w,20*log10(HC_P/HC_P(2)));
+plot(w,20*log10(HC_P/HC_P(1)));
 
 legend('CIC','ISOP','CIC+ISOP');
 grid on;
@@ -224,11 +230,11 @@ ylabel('Normalized |H(e^j^\omega))|(dB)');
 
 %通带内幅频特性
 figure(2);
-plot(w(1:nc)*fs/2,20*log10(abs(Hcic(1:nc)).^Q/(abs(Hcic(2)).^Q)));
+plot(w(1:nc)*fs/2,20*log10(abs(Hcic(1:nc)).^Q/(abs(Hcic(1)).^Q)));
 hold on ;
-plot(w(1:nc)*fs/2,20*log10(abs(Hisop(1:nc)/abs(Hisop(2)))));
+plot(w(1:nc)*fs/2,20*log10(abs(Hisop(1:nc)/abs(Hisop(1)))));
 hold on ;
-plot(w(1:nc)*fs/2,20*log10(HC_P(1:nc)/HC_P(2)));
+plot(w(1:nc)*fs/2,20*log10(HC_P(1:nc)/HC_P(1)));
 legend('CIC','ISOP','CIC+ISOP');
 grid on;
 xlabel('Normalized Frequency (\times\pi rad/sample)');
@@ -245,6 +251,8 @@ b = [1 repelem(0,R-1) -1];
 a = [1 -1];
 %数字滤波器频率响应
 [Hcic,w] = freqz(b,a,8192);
+% 对CIC零频率处幅频响应进行补充，其值为抽取因子（可根据其传递函数进行计算）
+Hcic(1,1) = length(b)-1;
 %为了单位表示方便
 w = w/pi;
 %通带截止频率
@@ -254,31 +262,33 @@ fs = 512e3;
 %归一化通带截止角频率(为了归一化，除以了pi，实际角频率是无需乘pi的)
 wc = (fc*2*pi/fs)/pi;
 %通带点数
-nc = round(wc/((fs/2)*2*pi/fs/8192/pi));
+nc = ceil(wc/((fs/2)*2*pi/fs/8192/pi))+1;
 %级联数为5的CIC幅频特性
 Q = 5;
 figure(1);
 %ISOP系数C设计:判定条件是通带内纹波最小
 % 
 delamin = 10;
-for c= -2.00001:-0.00001:-2.2
-    b1 = [1 c 1];
+plot(w(1:nc)*fs/2,20*log10(abs(Hcic(1:nc)).^Q / abs(Hcic(1)).^Q ));
+hold on
+for c= -4:-0.001:-6
+    b1 = [1 repelem(0,R-1) c repelem(0,R-1) 1];
     a1 = [abs(c+2)];
     % 数字滤波器频率响应
     [Hisop,wisop] = freqz(b1,a1,8192);
     wisop = wisop /pi;
     HC_P=abs(Hisop).*(abs(Hcic).^Q);
     HC_P_fc = HC_P(1:nc) ;
-    minh = min(20*log10(HC_P_fc/HC_P(2)));
-    maxh = max(20*log10(HC_P_fc/HC_P(2)));
+    minh = min(20*log10(HC_P_fc/HC_P_fc(1)));
+    maxh = max(20*log10(HC_P_fc/HC_P_fc(1)));
     if delamin > (maxh -minh)
           delamin = maxh -minh ;
           cc = c;
     end
-    plot(w(1:nc)*fs/2,20*log10(HC_P_fc/HC_P(2)));
+    plot(w(1:nc)*fs/2,20*log10(HC_P_fc/HC_P_fc(1)));
     hold on
 end
-%legend('CIC','ISOP','CIC+ISOP');
+legend('CIC','c=-3','c=-5','c=-7','c=-9','c=-11');
 grid on;
 xlabel('Normalized Frequency (\times\pi rad/sample)');
 ylabel('|H(e^j^\omega))|(dB)');
