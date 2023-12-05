@@ -190,13 +190,13 @@ Hcic(1,1) = length(b)-1;
 %为了单位表示方便
 w = w/pi;
 %通带截止频率
-fc = 1e3;
+fc = 500;
 %采样频率
 fs = 512e3;
 %归一化通带截止角频率(为了归一化，除以了pi，实际角频率是无需乘pi的)
 wc = (fc*2*pi/fs)/pi;
 %通带点数
-nc = round(wc/((fs/2)*2*pi/fs/8192/pi));
+nc = round(wc/((fs/2)*2*pi/fs/16384/pi));
 %级联数为5的CIC幅频特性
 Q = 5;
 figure(1);
@@ -204,7 +204,7 @@ plot(w,20*log10((abs(Hcic).^Q)/abs(Hcic(1)).^Q)); %
 xlabel('Normalized Frequency (\times\pi rad/sample)');
 ylabel('Normalized |H(e^j^\omega))|(dB)');
 hold on ;
-c= -4.897;
+c= -6.248;
 % b1 = [1 c 1];
 % a1 = [abs(c+2)];
 b1 = [1 repelem(0,R-1) c repelem(0,R-1) 1];
@@ -256,7 +256,7 @@ Hcic(1,1) = length(b)-1;
 %为了单位表示方便
 w = w/pi;
 %通带截止频率
-fc = 1e3;
+fc = 500;
 %采样频率
 fs = 512e3;
 %归一化通带截止角频率(为了归一化，除以了pi，实际角频率是无需乘pi的)
@@ -271,7 +271,7 @@ figure(1);
 delamin = 10;
 plot(w(1:nc)*fs/2,20*log10(abs(Hcic(1:nc)).^Q / abs(Hcic(1)).^Q ));
 hold on
-for c= -4:-0.001:-6
+for c= -4:-0.001:-12
     b1 = [1 repelem(0,R-1) c repelem(0,R-1) 1];
     a1 = [abs(c+2)];
     % 数字滤波器频率响应
