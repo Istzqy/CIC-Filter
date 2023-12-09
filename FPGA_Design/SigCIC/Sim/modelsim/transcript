@@ -1,0 +1,25 @@
+# Compile of Sig_CIC.v was successful.
+# Compile of tb_CIC.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_CIC
+# vsim -voptargs="+acc" work.tb_CIC 
+# Start time: 17:10:06 on Dec 09,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_CIC(fast)
+# Loading work.Sig_CIC(fast)
+add wave -position insertpoint  \
+sim:/tb_CIC/Data_len \
+sim:/tb_CIC/clk \
+sim:/tb_CIC/rst \
+sim:/tb_CIC/filter_in \
+sim:/tb_CIC/filter_out \
+sim:/tb_CIC/rdy \
+sim:/tb_CIC/mem \
+sim:/tb_CIC/i
+run
+# Causality operation skipped due to absence of debug database file
+run
+run
+run
+# End time: 23:06:31 on Dec 09,2023, Elapsed time: 5:56:25
+# Errors: 0, Warnings: 1
