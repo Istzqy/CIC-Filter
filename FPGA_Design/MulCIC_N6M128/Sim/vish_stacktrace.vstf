@@ -1,0 +1,51 @@
+# Current time Sun Dec 10 20:20:43 2023
+# ModelSim SE Stack Trace
+# Program = vish
+# Id = "10.6d"
+# Version = "2018.02"
+# Date = "Feb 24 2018"
+# Platform = win64
+
+Exception c0000005 has occurred at address 4039e01f. Traceback:
+# 0    0x4039e01f: 'Ucdb_Init + 0xb55f'
+# 1    0x4029bb4f: 'Mtirpc_Init + 0xeab7f'
+# 2    0x40298f62: 'Mtirpc_Init + 0xe7f92'
+# 3    0x40294b8d: 'Mtirpc_Init + 0xe3bbd'
+# 4    0x4027f6c3: 'Mtirpc_Init + 0xce6f3'
+# 5    0x402e2aca: 'Mtirpc_Init + 0x131afa'
+# 6    0x402e26a5: 'Mtirpc_Init + 0x1316d5'
+# 7    0x4023e4b4: 'Mtirpc_Init + 0x8d4e4'
+# 8    0x40189bfb: 'Tclsqlite3_SafeInit + 0xe3ddb'
+# 9    0x40189d70: 'Tclsqlite3_SafeInit + 0xe3f50'
+# 10   0x401831ed: 'Tclsqlite3_SafeInit + 0xdd3cd'
+# 11   0x40183018: 'Tclsqlite3_SafeInit + 0xdd1f8'
+# 12   0x40184293: 'Tclsqlite3_SafeInit + 0xde473'
+# 13   0x6169d41c: 'Tcl_ServiceEvent + 0x9c'
+# 14   0x6169d0b4: 'Tcl_DoOneEvent + 0x124'
+# 15   0x403cfbe1: 'TPedit_Init + 0x2e871'
+# 16   0x40194ffa: 'Tclsqlite3_SafeInit + 0xef1da'
+# 17   0x615f6234: 'TclInvokeStringCommand + 0x84'
+# 18   0x615f6c03: 'TclNRRunCallbacks + 0x63'
+# 19   0x615f6c03: 'TclNRRunCallbacks + 0x63'
+# 20   0xe0bd0bfa: 'Itcl_EvalMemberCode + 0x3ba'
+# 21   0xe0bd1dbb: 'Itcl_ExecMethod + 0x23b'
+# 22   0xe0bd9879: 'Itcl_EvalArgs + 0x1c9'
+# 23   0xe0bd4b51: 'Itcl_HandleInstance + 0x2c1'
+# 24   0x615f6c03: 'TclNRRunCallbacks + 0x63'
+# 25   0x61833f1e: 'TkSetWindowMenuBar + 0x96e'
+# 26   0x61783636: 'TkWinHandleMenuEvent + 0x486'
+# 27   0x61784193: 'TkWinHandleMenuEvent + 0xfe3'
+# 28   0xf2f38241: 'DispatchMessageW + 0x741'
+# 29   0xf2f37d01: 'DispatchMessageW + 0x201'
+# 30   0x616f25f1: 'Tcl_WaitForEvent + 0x161'
+# 31   0x6169d083: 'Tcl_DoOneEvent + 0xf3'
+# 32   0x617eaee5: 'Tk_MainLoop + 0x25'
+# 33   0x6182d282: 'Tk_MainEx + 0x932'
+# 34   0x401d3280: 'Mtirpc_Init + 0x222b0'
+# 35   0x401d58b8: 'Mtirpc_Init + 0x248e8'
+# 36   0x405f02cf: 'Tclsqlite_Init + 0x1a5f'
+# 37   0xf263257d: 'BaseThreadInitThunk + 0x1d'
+# 38   0xf484aa58: 'RtlUserThreadStart + 0x28'
+StackWalk failed 0
+# End of Stack Trace
+

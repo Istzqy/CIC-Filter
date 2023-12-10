@@ -1,0 +1,408 @@
+Analysis & Synthesis report for Mul_CIC
+Sun Dec 10 16:36:40 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+ 13. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Dec 10 16:36:40 2023       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; Mul_CIC                                     ;
+; Top-level Entity Name              ; Mul_CIC                                     ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 259                                         ;
+;     Total combinational functions  ; 208                                         ;
+;     Dedicated logic registers      ; 140                                         ;
+; Total registers                    ; 140                                         ;
+; Total pins                         ; 30                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F23I7      ;                    ;
+; Top-level entity name                                                      ; Mul_CIC            ; Mul_CIC            ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; ../Rtl/Mul_CIC.v                 ; yes             ; User Verilog HDL File  ; D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Mul_CIC.v    ;         ;
+; ../Rtl/Decimate.v                ; yes             ; User Verilog HDL File  ; D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Decimate.v   ;         ;
+; ../Rtl/Comb.v                    ; yes             ; User Verilog HDL File  ; D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Comb.v       ;         ;
+; ../Rtl/Integrated.v              ; yes             ; User Verilog HDL File  ; D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Integrated.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 259       ;
+;                                             ;           ;
+; Total combinational functions               ; 208       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 0         ;
+;     -- 3 input functions                    ; 99        ;
+;     -- <=2 input functions                  ; 109       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 112       ;
+;     -- arithmetic mode                      ; 96        ;
+;                                             ;           ;
+; Total registers                             ; 140       ;
+;     -- Dedicated logic registers            ; 140       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 30        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; rst~input ;
+; Maximum fan-out                             ; 242       ;
+; Total fan-out                               ; 1068      ;
+; Average fan-out                             ; 2.62      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                            ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------+--------------+
+; |Mul_CIC                   ; 208 (0)           ; 140 (0)      ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |Mul_CIC               ; work         ;
+;    |Comb:u3|               ; 102 (102)         ; 68 (68)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mul_CIC|Comb:u3       ; work         ;
+;    |Decimate:u2|           ; 4 (4)             ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mul_CIC|Decimate:u2   ; work         ;
+;    |Integrated:u1|         ; 102 (102)         ; 51 (51)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Mul_CIC|Integrated:u1 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------+
+; Registers Removed During Synthesis                           ;
++-----------------------------------------+--------------------+
+; Register name                           ; Reason for Removal ;
++-----------------------------------------+--------------------+
+; Comb:u3|d4[17..36]                      ; Lost fanout        ;
+; Comb:u3|d3[17..36]                      ; Lost fanout        ;
+; Comb:u3|d2[36]                          ; Lost fanout        ;
+; Comb:u3|d1[36]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[36]                ; Lost fanout        ;
+; Comb:u3|d2[35]                          ; Lost fanout        ;
+; Comb:u3|d1[35]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[35]                ; Lost fanout        ;
+; Comb:u3|d2[34]                          ; Lost fanout        ;
+; Comb:u3|d1[34]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[34]                ; Lost fanout        ;
+; Comb:u3|d2[33]                          ; Lost fanout        ;
+; Comb:u3|d1[33]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[33]                ; Lost fanout        ;
+; Comb:u3|d2[32]                          ; Lost fanout        ;
+; Comb:u3|d1[32]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[32]                ; Lost fanout        ;
+; Comb:u3|d2[31]                          ; Lost fanout        ;
+; Comb:u3|d1[31]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[31]                ; Lost fanout        ;
+; Comb:u3|d2[30]                          ; Lost fanout        ;
+; Comb:u3|d1[30]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[30]                ; Lost fanout        ;
+; Comb:u3|d2[29]                          ; Lost fanout        ;
+; Comb:u3|d1[29]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[29]                ; Lost fanout        ;
+; Comb:u3|d2[28]                          ; Lost fanout        ;
+; Comb:u3|d1[28]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[28]                ; Lost fanout        ;
+; Comb:u3|d2[27]                          ; Lost fanout        ;
+; Comb:u3|d1[27]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[27]                ; Lost fanout        ;
+; Comb:u3|d2[26]                          ; Lost fanout        ;
+; Comb:u3|d1[26]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[26]                ; Lost fanout        ;
+; Comb:u3|d2[25]                          ; Lost fanout        ;
+; Comb:u3|d1[25]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[25]                ; Lost fanout        ;
+; Comb:u3|d2[24]                          ; Lost fanout        ;
+; Comb:u3|d1[24]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[24]                ; Lost fanout        ;
+; Comb:u3|d2[23]                          ; Lost fanout        ;
+; Comb:u3|d1[23]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[23]                ; Lost fanout        ;
+; Comb:u3|d2[22]                          ; Lost fanout        ;
+; Comb:u3|d1[22]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[22]                ; Lost fanout        ;
+; Comb:u3|d2[21]                          ; Lost fanout        ;
+; Comb:u3|d1[21]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[21]                ; Lost fanout        ;
+; Comb:u3|d2[20]                          ; Lost fanout        ;
+; Comb:u3|d1[20]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[20]                ; Lost fanout        ;
+; Comb:u3|d2[19]                          ; Lost fanout        ;
+; Comb:u3|d1[19]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[19]                ; Lost fanout        ;
+; Comb:u3|d2[18]                          ; Lost fanout        ;
+; Comb:u3|d1[18]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[18]                ; Lost fanout        ;
+; Comb:u3|d2[17]                          ; Lost fanout        ;
+; Comb:u3|d1[17]                          ; Lost fanout        ;
+; Decimate:u2|dout_tem[17]                ; Lost fanout        ;
+; Integrated:u1|d3[17..36]                ; Lost fanout        ;
+; Integrated:u1|d2[17..36]                ; Lost fanout        ;
+; Integrated:u1|d1[17..36]                ; Lost fanout        ;
+; Total Number of Removed Registers = 160 ;                    ;
++-----------------------------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                           ;
++----------------------+--------------------+-------------------------------------------------------------------------------------------+
+; Register name        ; Reason for Removal ; Registers Removed due to This Register                                                    ;
++----------------------+--------------------+-------------------------------------------------------------------------------------------+
+; Integrated:u1|d3[36] ; Lost Fanouts       ; Integrated:u1|d3[35], Integrated:u1|d3[34], Integrated:u1|d3[33], Integrated:u1|d3[32],   ;
+;                      ;                    ; Integrated:u1|d3[31], Integrated:u1|d3[30], Integrated:u1|d3[29], Integrated:u1|d3[28],   ;
+;                      ;                    ; Integrated:u1|d3[27], Integrated:u1|d3[26], Integrated:u1|d3[25], Integrated:u1|d3[24],   ;
+;                      ;                    ; Integrated:u1|d3[23], Integrated:u1|d3[22], Integrated:u1|d3[21], Integrated:u1|d3[20],   ;
+;                      ;                    ; Integrated:u1|d3[19], Integrated:u1|d3[18], Integrated:u1|d3[17], Integrated:u1|d2[36],   ;
+;                      ;                    ; Integrated:u1|d2[35], Integrated:u1|d2[34], Integrated:u1|d2[33], Integrated:u1|d2[32],   ;
+;                      ;                    ; Integrated:u1|d2[31], Integrated:u1|d2[30], Integrated:u1|d2[29], Integrated:u1|d2[28],   ;
+;                      ;                    ; Integrated:u1|d2[27], Integrated:u1|d2[26], Integrated:u1|d2[25], Integrated:u1|d2[24],   ;
+;                      ;                    ; Integrated:u1|d2[23], Integrated:u1|d2[22], Integrated:u1|d2[21], Integrated:u1|d2[20],   ;
+;                      ;                    ; Integrated:u1|d2[19], Integrated:u1|d2[18], Integrated:u1|d2[17], Integrated:u1|d1[36],   ;
+;                      ;                    ; Integrated:u1|d1[35], Integrated:u1|d1[34], Integrated:u1|d1[33], Integrated:u1|d1[32],   ;
+;                      ;                    ; Integrated:u1|d1[31], Integrated:u1|d1[30], Integrated:u1|d1[29], Integrated:u1|d1[28],   ;
+;                      ;                    ; Integrated:u1|d1[27], Integrated:u1|d1[26], Integrated:u1|d1[25], Integrated:u1|d1[24],   ;
+;                      ;                    ; Integrated:u1|d1[23], Integrated:u1|d1[22], Integrated:u1|d1[21], Integrated:u1|d1[20],   ;
+;                      ;                    ; Integrated:u1|d1[19], Integrated:u1|d1[18], Integrated:u1|d1[17]                          ;
+; Comb:u3|d4[36]       ; Lost Fanouts       ; Comb:u3|d3[36], Comb:u3|d3[35], Comb:u3|d3[34], Comb:u3|d3[33], Comb:u3|d3[32],           ;
+;                      ;                    ; Comb:u3|d3[31], Comb:u3|d3[30], Comb:u3|d1[36], Decimate:u2|dout_tem[36], Comb:u3|d1[35], ;
+;                      ;                    ; Decimate:u2|dout_tem[35], Comb:u3|d1[34], Decimate:u2|dout_tem[34], Comb:u3|d1[33],       ;
+;                      ;                    ; Decimate:u2|dout_tem[33], Comb:u3|d1[32], Decimate:u2|dout_tem[32], Comb:u3|d1[31],       ;
+;                      ;                    ; Decimate:u2|dout_tem[31], Comb:u3|d1[30], Decimate:u2|dout_tem[30]                        ;
+; Comb:u3|d2[29]       ; Lost Fanouts       ; Comb:u3|d1[29], Decimate:u2|dout_tem[29]                                                  ;
+; Comb:u3|d2[28]       ; Lost Fanouts       ; Comb:u3|d1[28], Decimate:u2|dout_tem[28]                                                  ;
+; Comb:u3|d2[27]       ; Lost Fanouts       ; Comb:u3|d1[27], Decimate:u2|dout_tem[27]                                                  ;
+; Comb:u3|d2[26]       ; Lost Fanouts       ; Comb:u3|d1[26], Decimate:u2|dout_tem[26]                                                  ;
+; Comb:u3|d2[25]       ; Lost Fanouts       ; Comb:u3|d1[25], Decimate:u2|dout_tem[25]                                                  ;
+; Comb:u3|d2[24]       ; Lost Fanouts       ; Comb:u3|d1[24], Decimate:u2|dout_tem[24]                                                  ;
+; Comb:u3|d2[23]       ; Lost Fanouts       ; Comb:u3|d1[23], Decimate:u2|dout_tem[23]                                                  ;
+; Comb:u3|d2[22]       ; Lost Fanouts       ; Comb:u3|d1[22], Decimate:u2|dout_tem[22]                                                  ;
+; Comb:u3|d2[21]       ; Lost Fanouts       ; Comb:u3|d1[21], Decimate:u2|dout_tem[21]                                                  ;
+; Comb:u3|d2[20]       ; Lost Fanouts       ; Comb:u3|d1[20], Decimate:u2|dout_tem[20]                                                  ;
+; Comb:u3|d2[19]       ; Lost Fanouts       ; Comb:u3|d1[19], Decimate:u2|dout_tem[19]                                                  ;
+; Comb:u3|d2[18]       ; Lost Fanouts       ; Comb:u3|d1[18], Decimate:u2|dout_tem[18]                                                  ;
+; Comb:u3|d2[17]       ; Lost Fanouts       ; Comb:u3|d1[17], Decimate:u2|dout_tem[17]                                                  ;
++----------------------+--------------------+-------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 140   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 140   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 85    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Sun Dec 10 16:36:39 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mul_CIC -c Mul_CIC
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga_matlab_learning/cic_filter/fpga_design/mulcic/sim/tb_mul_cic.v
+    Info (12023): Found entity 1: tb_CIC
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga_matlab_learning/cic_filter/fpga_design/mulcic/rtl/mul_cic.v
+    Info (12023): Found entity 1: Mul_CIC
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga_matlab_learning/cic_filter/fpga_design/mulcic/rtl/decimate.v
+    Info (12023): Found entity 1: Decimate
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga_matlab_learning/cic_filter/fpga_design/mulcic/rtl/comb.v
+    Info (12023): Found entity 1: Comb
+Info (12021): Found 1 design units, including 1 entities, in source file /fpga_matlab_learning/cic_filter/fpga_design/mulcic/rtl/integrated.v
+    Info (12023): Found entity 1: Integrated
+Info (12127): Elaborating entity "Mul_CIC" for the top level hierarchy
+Info (12128): Elaborating entity "Integrated" for hierarchy "Integrated:u1"
+Warning (10036): Verilog HDL or VHDL warning at Integrated.v(12): object "temp" assigned a value but never read
+Info (12128): Elaborating entity "Decimate" for hierarchy "Decimate:u2"
+Warning (10230): Verilog HDL assignment warning at Decimate.v(34): truncated value with size 32 to match size of target (3)
+Info (12128): Elaborating entity "Comb" for hierarchy "Comb:u3"
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 160 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Quartus_Prj/output_files/Mul_CIC.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 375 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 345 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4663 megabytes
+    Info: Processing ended: Sun Dec 10 16:36:40 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Quartus_Prj/output_files/Mul_CIC.map.smsg.
+
+
