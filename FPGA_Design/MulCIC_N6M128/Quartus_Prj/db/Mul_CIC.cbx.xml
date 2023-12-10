@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Mul_CIC">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Mul_CIC|Clk_Div:u4|altpll:altpll_component" CBX_FILE_NAME="Clk_Div_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>

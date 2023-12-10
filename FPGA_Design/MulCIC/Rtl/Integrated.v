@@ -1,0 +1,50 @@
+module Integrated(
+	rst,clk,Xin,
+	Intout
+);
+
+input rst;	// 复位信号，高电平有效
+input clk;	//系统时钟，频率2KHz
+input signed [9:0]		Xin;	//数据输入频率2KHz
+output signed [16:0]	Intout;	//滤波器输出数据
+
+//每集积分器需一个寄存器+一级加法
+wire signed [16:0] 	I1,I2,I3,temp;
+reg	signed	[16:0]	d1,d2,d3;
+
+
+//第1级积分器
+always@(posedge clk or posedge rst)
+	if(rst)
+		d1 <= 17'd0;
+	else
+		d1 <= I1;
+		
+//第一级积分器输出
+assign I1 = (rst ? 17'd0 :(d1+{{7{Xin[9]}},Xin}));	
+//测试观察
+assign temp = {{7{Xin[9]}},Xin};	
+
+//第2级积分器
+always@(posedge clk or posedge rst)
+	if(rst)
+		d2 <= 17'd0;
+	else
+		d2 <= I2;
+//第二级积分器输出		
+assign I2 = (rst ? 17'd0 : (d2+I1));
+
+//第3级积分器
+always@(posedge clk or posedge rst)
+	if(rst)
+		d3 <= 17'd0;
+	else
+		d3 <= I3;
+//第三级积分器输出		
+assign I3 = (rst ? 17'd0 : (d3+I2));
+
+//积分器部分最后输出
+assign Intout = I3;	
+
+
+endmodule

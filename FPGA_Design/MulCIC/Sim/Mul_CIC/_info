@@ -1,0 +1,171 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/modeltech64_10.6d/examples
+T_opt
+!s110 1702197872
+VZGO@6_Nhmh@c;2g46BdCF1
+04 6 4 work tb_CIC fast 0
+=1-6c24082544b2-65757a70-188-25f0
+Z1 o-quiet -auto_acc_if_foreign -work Mul_CIC +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6d;65
+R0
+T_opt1
+!s110 1702201081
+V0RezS44a2ga82cbm`X?D52
+04 10 4 work tb_Mul_CIC fast 0
+=1-6c24082544b2-657586f9-11c-13bc
+R1
+R2
+n@_opt1
+R3
+T_opt2
+!s110 1702200733
+V]8>`0JJUM@XIi[`Xc43nU2
+04 8 4 work Decimate fast 0
+=1-6c24082544b2-6575859d-218-2360
+o-quiet -auto_acc_if_foreign -work Mul_CIC
+R2
+n@_opt2
+R3
+R0
+vComb
+Z4 !s110 1702201043
+!i10b 1
+!s100 lnocK7KMKCm0f>1R`;VUE3
+I0Wmd<YHGgfc66HE`DM2250
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 dD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Sim
+w1702200878
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Comb.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Comb.v
+L0 1
+Z7 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z8 !s108 1702201043.000000
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Comb.v|
+!s90 -reportprogress|300|-work|Mul_CIC|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Comb.v|
+!i113 0
+Z9 o-work Mul_CIC -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@comb
+vDecimate
+R4
+!i10b 1
+!s100 L8o1=0WTIT[c^=WUC`R3K0
+IHFHM_4Gz?fI`g:nc^6g4@3
+R5
+R6
+w1702200836
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Decimate.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Decimate.v
+L0 2
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Decimate.v|
+!s90 -reportprogress|300|-work|Mul_CIC|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Decimate.v|
+!i113 0
+R9
+R2
+n@decimate
+vIntegrated
+R4
+!i10b 1
+!s100 o6^BdFOh96mMN49NHigH^3
+I9c^gVUXgk_CibmTT@IVb11
+R5
+R6
+w1702201003
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Integrated.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Integrated.v
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Integrated.v|
+!s90 -reportprogress|300|-work|Mul_CIC|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Integrated.v|
+!i113 0
+R9
+R2
+n@integrated
+vMul_CIC
+R4
+!i10b 1
+!s100 iao4X[N93IE=6gMY0TUIF2
+IJ[fPo9:FUY0b>Ij>iIz360
+R5
+R6
+w1702196344
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Mul_CIC.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Mul_CIC.v
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Mul_CIC.v|
+!s90 -reportprogress|300|-work|Mul_CIC|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Mul_CIC.v|
+!i113 0
+R9
+R2
+n@mul_@c@i@c
+vtb_CIC
+!s110 1702197839
+!i10b 1
+!s100 7[hZ]=mNXc[dmPLGg^?7L3
+I<7n`8261h=<H?kecU]D:B1
+R5
+R6
+w1702196374
+Z10 8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Sim/tb_Mul_CIC.v
+Z11 FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Sim/tb_Mul_CIC.v
+Z12 L0 19
+R7
+r1
+!s85 0
+31
+!s108 1702197839.000000
+Z13 !s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Sim/tb_Mul_CIC.v|
+Z14 !s90 -reportprogress|300|-work|Mul_CIC|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Sim/tb_Mul_CIC.v|
+!i113 0
+R9
+R2
+ntb_@c@i@c
+vtb_Mul_CIC
+R4
+!i10b 1
+!s100 jYmW;Mf@4@PC5WhSE0JO52
+IcHCj?d4<_WDIX0YT>0l8k0
+R5
+R6
+w1702197980
+R10
+R11
+R12
+R7
+r1
+!s85 0
+31
+R8
+R13
+R14
+!i113 0
+R9
+R2
+ntb_@mul_@c@i@c
