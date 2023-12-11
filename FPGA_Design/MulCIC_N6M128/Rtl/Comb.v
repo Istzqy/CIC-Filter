@@ -13,7 +13,7 @@ reg signed [43:0]	d1,d2,d3,d4,d5,d6,d7;
 wire signed [43:0]	c1,c2,c3,c4,c5;
 wire signed [43:0]	You_tem;
 
-//3级梳状器结构
+//6级梳状器结构
 always@(posedge rst or posedge clk)
 	if(rst)
 		begin
@@ -31,6 +31,7 @@ always@(posedge rst or posedge clk)
 				begin
 					d1<= Xin;
 					d2<= d1;
+					//d2<= Xin;
 					d3<= c1;
 					d4<= c2;
 					d5<= c3;
@@ -40,6 +41,7 @@ always@(posedge rst or posedge clk)
 		end
 //第一级梳状器输出
 assign c1 = (rst ? 44'd0 : (d1-d2));
+//assign c1 = (rst ? 44'd0 : (Xin-d2));
 //第二级梳状器输出
 assign c2 = (rst ? 44'd0 : (c1-d3));
 //第三级梳状器输出

@@ -21,7 +21,7 @@ always@(posedge clk or posedge rst)
 		d1 <= I1;
 		
 //第一级积分器输出
-assign I1 = (rst ? 44'd0 :(d1+{{42{Xin[1]}},Xin}));	
+assign I1 = (rst ? 44'd0 :(d1+{{42{Xin[1]}},Xin}));		//为了输入Xin与d1相加，对Xin进行高位补充，整数填0，负数填1，这样都是按照补码格式。
 //测试观察
 assign temp = {{42{Xin[1]}},Xin};	
 

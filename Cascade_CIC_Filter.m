@@ -204,6 +204,7 @@ plot(w,20*log10((abs(Hcic).^Q)/abs(Hcic(1)).^Q)); %
 xlabel('Normalized Frequency (\times\pi rad/sample)');
 ylabel('Normalized |H(e^j^\omega))|(dB)');
 hold on ;
+%c= -5.494;
 c= -5.494;
 % b1 = [1 c 1];
 % a1 = [abs(c+2)];
@@ -245,6 +246,7 @@ ylabel('|H(e^j^\omega))|(dB)');
 
 clc;
 clear;
+close all;
 % CIC设计
 R = 128;
 b = [1 repelem(0,R-1) -1];
@@ -271,7 +273,7 @@ figure(1);
 delamin = 10;
 plot(w(1:nc)*fs/2,20*log10(abs(Hcic(1:nc)).^Q / abs(Hcic(1)).^Q ));
 hold on
-for c= -4:-0.001:-8
+for c= -4:-0.001:-6
     b1 = [1 repelem(0,R-1) c repelem(0,R-1) 1];
     a1 = [abs(c+2)];
     % 数字滤波器频率响应
