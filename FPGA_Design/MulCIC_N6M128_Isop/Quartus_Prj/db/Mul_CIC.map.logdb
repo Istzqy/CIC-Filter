@@ -1,0 +1,6 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Isop:u5|lpm_mult:Mult0|mult_7ht:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Isop:u5|lpm_mult:Mult0|mult_7ht:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Isop:u5|lpm_mult:Mult0|mult_7ht:auto_generated|mac_out8,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Isop:u5|lpm_mult:Mult0|mult_7ht:auto_generated|mac_out10,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Isop:u5|lpm_mult:Mult0|mult_7ht:auto_generated|mac_out6,
