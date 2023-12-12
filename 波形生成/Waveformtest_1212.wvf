@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Version>2.01.00</Version>
+  <Instrument>33500-Series</Instrument>
+  <SampleRate>10000</SampleRate>
+  <Channel Name="eChannel1">
+    <Segment Name="eSineSegment" TotalSamples="5000" Amplitude="2" Offset="0" Cycles="5" Phase="0" />
+    <Segment Name="eDampedSegment" TotalSamples="2500" Amplitude="2" Offset="0" Cycles="1" Phase="0" DecayConstant="5" ZeroCrossing="10" />
+  </Channel>
+</Root>
