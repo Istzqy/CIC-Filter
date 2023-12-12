@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Mul_CIC">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Mul_CIC|HalfBand:u6|lpm_mult:Mult1" CBX_FILE_NAME="mult_4ht.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Mul_CIC|HalfBand:u6|lpm_mult:Mult3" CBX_FILE_NAME="mult_4ht.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Mul_CIC|Clk_Div:u4|altpll:altpll_component" CBX_FILE_NAME="Clk_Div_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Mul_CIC|HalfBand:u6|lpm_mult:Mult0" CBX_FILE_NAME="mult_ift.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Mul_CIC|HalfBand:u6|lpm_mult:Mult2" CBX_FILE_NAME="mult_1ht.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Mul_CIC|HalfBand:u6|lpm_mult:Mult4" CBX_FILE_NAME="mult_0ht.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

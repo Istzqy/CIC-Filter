@@ -30,6 +30,7 @@ wire signed [43:0] Combout;	//梳状器输出
 wire signed [43:0] dout;	//抽取输出
 //wire signed [36:0] yt;
 
+
 //积分器例化
 Integrated u1(
 	.rst(rst),

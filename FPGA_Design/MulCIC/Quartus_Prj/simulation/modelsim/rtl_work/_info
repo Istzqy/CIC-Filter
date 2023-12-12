@@ -1,0 +1,134 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Quartus_Prj/simulation/modelsim
+T_opt
+!s110 1702295910
+VC38EH?AfP:`Dzcdo_o`zG3
+04 10 4 work tb_Mul_CIC fast 0
+=2-6c24082544b2-6576f966-2e4-308c
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6d;65
+vComb
+Z2 !s110 1702295893
+!i10b 1
+!s100 lnocK7KMKCm0f>1R`;VUE3
+ISDEjQY>^5EGMnX2<13[VJ1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1702200878
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Comb.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Comb.v
+L0 1
+Z4 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z5 !s108 1702295893.000000
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Comb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Comb.v|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work work +incdir+D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@comb
+vDecimate
+R2
+!i10b 1
+!s100 L8o1=0WTIT[c^=WUC`R3K0
+ImE[G;7:1m7WD^XZ8J[65Q2
+R3
+R0
+w1702200836
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Decimate.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Decimate.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Decimate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Decimate.v|
+!i113 0
+R6
+R7
+R1
+n@decimate
+vIntegrated
+R2
+!i10b 1
+!s100 o6^BdFOh96mMN49NHigH^3
+IEiaTcP>BTRF_>M:7]SOPA3
+R3
+R0
+w1702201003
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Integrated.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Integrated.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Integrated.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Integrated.v|
+!i113 0
+R6
+R7
+R1
+n@integrated
+vMul_CIC
+!s110 1702295892
+!i10b 1
+!s100 iao4X[N93IE=6gMY0TUIF2
+IG5Ejc=FBK[go5n6z?9J`H0
+R3
+R0
+w1702196344
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Mul_CIC.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Mul_CIC.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1702295892.000000
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Mul_CIC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Rtl/Mul_CIC.v|
+!i113 0
+R6
+R7
+R1
+n@mul_@c@i@c
+vtb_Mul_CIC
+R2
+!i10b 1
+!s100 jYmW;Mf@4@PC5WhSE0JO52
+I@hC;>LKI]4>D0kd[mngW61
+R3
+R0
+w1702197980
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Quartus_Prj/../Sim/tb_Mul_CIC.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Quartus_Prj/../Sim/tb_Mul_CIC.v
+L0 19
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Quartus_Prj/../Sim/tb_Mul_CIC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Quartus_Prj/../Sim|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Quartus_Prj/../Sim/tb_Mul_CIC.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC/Quartus_Prj/../Sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+ntb_@mul_@c@i@c

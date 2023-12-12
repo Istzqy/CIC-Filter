@@ -26,6 +26,10 @@ reg signed 	[43:0]	d1,d2,d3,d4,d5,d6,d7;
 wire signed [43:0]	c1,c2,c3,c4,c5;
 wire signed [43:0]	You_tem;
 
+/* wire signed [2:0] test1,test2;
+parameter tem1 = 7'd63;
+parameter tem2 = -7'd64; */
+
 //6级梳状器结构
 always@(posedge rst or posedge clk)
 	if(rst)
@@ -65,5 +69,8 @@ assign c5 = (rst ? 44'd0 : (c4-d6));
 assign You_tem = (rst ? 44'd0 : (c5-d7));
 
 assign Yout = You_tem;	
+
+/* assign test1 = 4 + tem1 ;	
+assign test2 = test1 + tem2; */
 
 endmodule
