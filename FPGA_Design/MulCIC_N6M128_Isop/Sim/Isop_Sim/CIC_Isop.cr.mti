@@ -1,9 +1,9 @@
-D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Sim/tb_Mul_CIC.v {1 {vlog -work CIC_Isop -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Sim/tb_Mul_CIC.v
+D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Rtl/Decimate.v {1 {vlog -work CIC_Isop -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Rtl/Decimate.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module tb_Mul_CIC
+-- Compiling module Decimate
 
 Top level modules:
-	tb_Mul_CIC
+	Decimate
 
 } {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Rtl/Mul_CIC.v {1 {vlog -work CIC_Isop -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Rtl/Mul_CIC.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
@@ -12,19 +12,12 @@ Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 Top level modules:
 	Mul_CIC
 
-} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Rtl/Decimate.v {1 {vlog -work CIC_Isop -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Rtl/Decimate.v
+} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Sim/tb_Mul_CIC.v {1 {vlog -work CIC_Isop -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Sim/tb_Mul_CIC.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module Decimate
+-- Compiling module tb_Mul_CIC
 
 Top level modules:
-	Decimate
-
-} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Rtl/Comb.v {1 {vlog -work CIC_Isop -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_N6M128_Isop/Rtl/Comb.v
-Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module Comb
-
-Top level modules:
-	Comb
+	tb_Mul_CIC
 
 } {} {}} F:/Altera/13.1/quartus/eda/sim_lib/220model.v {1 {vlog -work CIC_Isop -vopt -stats=none F:/Altera/13.1/quartus/eda/sim_lib/220model.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018

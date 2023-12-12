@@ -1,0 +1,1882 @@
+m255
+K4
+z2
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Sim
+T_opt
+!s110 1702350355
+VT6Bz>o7PXaJ0P5UO4d5;E3
+04 8 4 work HalfBand fast 0
+=1-6c24082544b2-6577ce13-125-3864
+o-quiet -auto_acc_if_foreign -work CIC_ISOP_HB +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6d;65
+va_graycounter
+Z2 !s110 1702350328
+!i10b 1
+!s100 FI?[k<oCFi9HWYigXHGcf0
+IIez<SCElT6F4>]YjlnI<J2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1382637282
+Z5 8F:/Altera/13.1/quartus/eda/sim_lib/altera_mf.v
+Z6 FF:/Altera/13.1/quartus/eda/sim_lib/altera_mf.v
+L0 49136
+Z7 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z8 !s108 1702350327.000000
+Z9 !s107 F:/Altera/13.1/quartus/eda/sim_lib/altera_mf.v|
+Z10 !s90 -reportprogress|300|-work|CIC_ISOP_HB|-vopt|-stats=none|F:/Altera/13.1/quartus/eda/sim_lib/altera_mf.v|
+!i113 0
+Z11 o-work CIC_ISOP_HB -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+valt3pram
+R2
+!i10b 1
+!s100 UoB51QU2NzKlzLzJ=bSEL0
+I<dHKjjmAj2FdkAD6@__IX2
+R3
+R0
+R4
+R5
+R6
+L0 47345
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valt_aeq_s4
+R2
+!i10b 1
+!s100 De3U5iKLd2^m>6AP07Bnz1
+IYCT3e6^GLbSKDocj2XnTM0
+R3
+R0
+R4
+R5
+R6
+L0 50087
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valt_cal
+R2
+!i10b 1
+!s100 HKVFfVRahGV>P9g8ALcDQ2
+I^e`f;GhGN1SMm1GD5[_OF3
+R3
+R0
+R4
+R5
+R6
+L0 49556
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valt_cal_av
+R2
+!i10b 1
+!s100 `49e6]>kWCG=V5NEld^2>3
+I>QB[c0RZj_b_DGmhTl0[L0
+R3
+R0
+R4
+R5
+R6
+L0 49980
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valt_cal_c3gxb
+R2
+!i10b 1
+!s100 gIZgll5KAdQ]QekV=Q^@Z1
+I;HKJ4FBf:ZfQNJ?zz16iF3
+R3
+R0
+R4
+R5
+R6
+L0 49783
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valt_cal_mm
+R2
+!i10b 1
+!s100 0IDN8ZmocfW6<eWHU681J0
+I8X>KEUJV_@]i0kZQNVZQZ3
+R3
+R0
+R4
+R5
+R6
+L0 49658
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valt_cal_sv
+R2
+!i10b 1
+!s100 L:j`7SA@o>An>6Uom24o80
+I@EESVk=S`]m3X;?EiS4mT1
+R3
+R0
+R4
+R5
+R6
+L0 49883
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valt_dfe
+R2
+!i10b 1
+!s100 OG9AL4imc8NAI2_0e7NhH2
+I@Cehz<@4X`_F4OIIJV0582
+R3
+R0
+R4
+R5
+R6
+L0 50464
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valt_eyemon
+R2
+!i10b 1
+!s100 mZJ5_3f<<Mek08mm9@cM_0
+Ic_iL;V2=31cjaA5k7`kkN2
+R3
+R0
+R4
+R5
+R6
+L0 50184
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtaccumulate
+R2
+!i10b 1
+!s100 U?_9`Xn3WD5_NI?X20iQD0
+IkP=dZ1MZzGTgBDMn<0@TL3
+R3
+R0
+R4
+R5
+R6
+L0 31636
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtclklock
+R2
+!i10b 1
+!s100 n:0R:Z@oZQLiaYJ5lW7PR1
+I3iA1a3N;_l:b?o:80nkD?3
+R3
+R0
+R4
+R5
+R6
+L0 42308
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtddio_bidir
+R2
+!i10b 1
+!s100 K8=bnL@8IU0cmK1DRWDAA0
+In?5>:i^TCj[]08eg3DAe]0
+R3
+R0
+R4
+R5
+R6
+L0 43748
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtddio_in
+R2
+!i10b 1
+!s100 HZKX`M0:J`jaci<O?iAJZ0
+IO[B6oi:hacKz9129e8Wh^1
+R3
+R0
+R4
+R5
+R6
+L0 43234
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtddio_out
+R2
+!i10b 1
+!s100 >7F5=QIOT^g>KYk3jfIYd3
+I5QX4Qjb_7@WCA:RT9iJa=2
+R3
+R0
+R4
+R5
+R6
+L0 43497
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtdpram
+R2
+!i10b 1
+!s100 RFUWO1:6UIR1Zd=I^FA?]0
+I3O:IVV;D>z?V?9WW??@M01
+R3
+R0
+R4
+R5
+R6
+L0 43887
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vALTERA_DEVICE_FAMILIES
+Z12 !s110 1702350327
+!i10b 1
+!s100 FhER4>?CTY2IImAQ`W5mU3
+I0G;CEOjSWnP0o:fMG2D=c3
+R3
+R0
+R4
+R5
+R6
+L0 1344
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+n@a@l@t@e@r@a_@d@e@v@i@c@e_@f@a@m@i@l@i@e@s
+vALTERA_MF_HINT_EVALUATION
+R12
+!i10b 1
+!s100 a=Fe>V8[JB19QF`<JB2a80
+I9ZHAIW>@:MZ]ITOl8Po482
+R3
+R0
+R4
+R5
+R6
+L0 1222
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+n@a@l@t@e@r@a_@m@f_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
+vALTERA_MF_MEMORY_INITIALIZATION
+R12
+!i10b 1
+!s100 1;fUiNdohROUTkB`ZS<H92
+IC8;od2S<:`FKP9QGClfmb3
+R3
+R0
+R4
+R5
+R6
+L0 71
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+n@a@l@t@e@r@a_@m@f_@m@e@m@o@r@y_@i@n@i@t@i@a@l@i@z@a@t@i@o@n
+valtera_std_synchronizer
+R2
+!i10b 1
+!s100 7[?HRJo41a]bV3me;fe:V3
+I`TTC<_iGB=0kz]?j[`3c@0
+R3
+R0
+R4
+R5
+R6
+L0 49362
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtera_std_synchronizer_bundle
+R2
+!i10b 1
+!s100 USLWRb^mBmc@IZ^JSdozY1
+IFYL`miVP5C5>2@3Q4KJ]o1
+R3
+R0
+R4
+R5
+R6
+L0 49521
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtfp_mult
+R2
+!i10b 1
+!s100 KaM6nc]cEi?0YDMehQ?6@3
+IH2I]IE1^0^bdd0H3U8zmJ0
+R3
+R0
+R4
+R5
+R6
+L0 41421
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtlvds_rx
+R12
+!i10b 1
+!s100 6_C4Jg7In?klcRB[IHC2F1
+IH71BlRHf_>;dQWW8iF0;G3
+R3
+R0
+R4
+R5
+R6
+L0 23702
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtlvds_tx
+R2
+!i10b 1
+!s100 ;1`3_f``Ne?n3JBo5zU;A0
+I_e^cP3BUz1MB7mTa7bQ;i2
+R3
+R0
+R4
+R5
+R6
+L0 27282
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtmult_accum
+R2
+!i10b 1
+!s100 SCeEEa1d]?:=lfjQUW6n:3
+IASeN6GPEBEl^MZBecUWm:0
+R3
+R0
+R4
+R5
+R6
+L0 31878
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtmult_add
+R2
+!i10b 1
+!s100 1ZjS@7hDCKmnGKTS^>UR[3
+I2g7;cBCKNaWPV][T@aJ_n2
+R3
+R0
+R4
+R5
+R6
+L0 34083
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtparallel_flash_loader
+R2
+!i10b 1
+!s100 80T6cZS[M4RiV9ZWCR;::0
+IzbFC?TDFYE9kY<:YUW7Bh3
+R3
+R0
+R4
+R5
+R6
+L0 52343
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtpll
+R12
+!i10b 1
+!s100 SO?n[RkfnA]8Q5:=bzFLh1
+IJQzCXF]4Eim9<<hkRniLo2
+R3
+R0
+R4
+R5
+R6
+L0 21688
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtserial_flash_loader
+R2
+!i10b 1
+!s100 VYEIbkH31:gie6T>0@V9<1
+ISB9dao8E>gJcPn3@G_=2c0
+R3
+R0
+R4
+R5
+R6
+L0 52463
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtshift_taps
+R2
+!i10b 1
+!s100 NAMlf6oN9M3Z3_Be_ZF?O0
+Iz^gIC=Ah<ZDPeNFMM5KHe3
+R3
+R0
+R4
+R5
+R6
+L0 49003
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtsource_probe
+R2
+!i10b 1
+!s100 0H^flEVSMh@bBU^0XYX_e1
+I>nMSmjHN>?KzIKUoQ<0gB2
+R3
+R0
+R4
+R5
+R6
+L0 52573
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtsqrt
+R2
+!i10b 1
+!s100 mlG82cW8=Hd1fgBLTNPgV1
+IgSHn=UDmCXkf]@?AnaC[M3
+R3
+R0
+R4
+R5
+R6
+L0 42106
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtsquare
+R2
+!i10b 1
+!s100 9Eei[ULl^mkbXom>N^bYW1
+IT?WXW`dc]G@AmAN1<iL5Z1
+R3
+R0
+R4
+R5
+R6
+L0 49227
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtstratixii_oct
+R2
+!i10b 1
+!s100 KGUlNBc=Gi;Viok]Q?LlS2
+IKjL;oebXX]k9>Tc1c03`F3
+R3
+R0
+R4
+R5
+R6
+L0 52327
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+valtsyncram
+R2
+!i10b 1
+!s100 dGzR1z]M`CFh6=UM4hFOF2
+IX;1k9FT9Mmn<?QbDfB9:V0
+R3
+R0
+R4
+R5
+R6
+L0 44418
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+varm_m_cntr
+R12
+!i10b 1
+!s100 UefMf4^kW017KKcRl5mSj2
+I_SL7o`fa4VTQ<OP7nFQOY0
+R3
+R0
+R4
+R5
+R6
+L0 6417
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+varm_n_cntr
+R12
+!i10b 1
+!s100 2BOE3zVZ6LT4M>O2K]EBL0
+IOZ1^Z<CC9cIU2`004Q60T1
+R3
+R0
+R4
+R5
+R6
+L0 6497
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+varm_scale_cntr
+R12
+!i10b 1
+!s100 IU4XOW;kV@NGTcJKA1<0D2
+IShH;;TMGULD:TReFVM2f82
+R3
+R0
+R4
+R5
+R6
+L0 6579
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vcda_m_cntr
+R12
+!i10b 1
+!s100 1Y:6BSj4V;T5gH3BD;Ncd0
+IBGBn=iYYmSb6RMZEOjLRB1
+R3
+R0
+R4
+R5
+R6
+L0 14356
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vcda_n_cntr
+R12
+!i10b 1
+!s100 NiIFaLZmGX?087gNiD6@l0
+ISWKVAQi_?@2RQ]K7CO4VF0
+R3
+R0
+R4
+R5
+R6
+L0 14437
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vcda_scale_cntr
+R12
+!i10b 1
+!s100 _>CjT]@W=A>jaVMcX]Z_J1
+INNO4o<O3K^8GB5O]NjeMj0
+R3
+R0
+R4
+R5
+R6
+L0 14508
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vClk_Div
+R12
+!i10b 1
+!s100 C=zfgBQAlhD_SKD[KJFU11
+IFY6<A2QLR@RCJG:P;n:ZQ1
+R3
+R0
+w1702215264
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Quartus_Prj/Clk_Div.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Quartus_Prj/Clk_Div.v
+L0 39
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Quartus_Prj/Clk_Div.v|
+!s90 -reportprogress|300|-work|CIC_ISOP_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Quartus_Prj/Clk_Div.v|
+!i113 0
+R11
+R1
+n@clk_@div
+vComb
+R12
+!i10b 1
+!s100 Xh5OjK>FYOHN`8V>Q:kj<2
+ISKmiU5EQPh4aA;?o99zk>1
+R3
+R0
+w1702303727
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Comb.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Comb.v
+Z13 L0 14
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Comb.v|
+!s90 -reportprogress|300|-work|CIC_ISOP_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Comb.v|
+!i113 0
+R11
+R1
+n@comb
+vcycloneiiigl_post_divider
+R12
+!i10b 1
+!s100 X2P2VHzbWK64;`H:klo2I1
+I5J9[<aghWfDz^PIm8WaZI2
+R3
+R0
+R4
+R5
+R6
+L0 18226
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vdcfifo
+R2
+!i10b 1
+!s100 dbIOE;QgZ7R^lYSn`5_6_1
+ILZ@I=MkDcW;6]AHaT_:6F2
+R3
+R0
+R4
+R5
+R6
+L0 31500
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vdcfifo_async
+R2
+!i10b 1
+!s100 jX;1VVIkhWiH`4C^gg6me3
+IaR2mFG78mI0mJL9k[7eS61
+R3
+R0
+R4
+R5
+R6
+L0 29775
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vdcfifo_dffpipe
+R2
+!i10b 1
+!s100 ]6e<BMdmCif^6`3Qa1Tdl0
+IzE;2<H568TD5L]e@_UaRe0
+R3
+R0
+R4
+R5
+R6
+L0 29545
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vdcfifo_fefifo
+R2
+!i10b 1
+!s100 5TzkJd2emHhjiJ@5?TkNP0
+IVfQSXQUAZeSSmhhVObB192
+R3
+R0
+R4
+R5
+R6
+L0 29623
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vdcfifo_low_latency
+R2
+!i10b 1
+!s100 l@SPj^6hCeA>NS8NWQQ572
+IH7hR^G4P3g>af[TJh7a5a2
+R3
+R0
+R4
+R5
+R6
+L0 30570
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vdcfifo_mixed_widths
+R2
+!i10b 1
+!s100 VPgQkTE860DUFbmGBnbc62
+ITIhVN8g@]E6`9VWkRdki82
+R3
+R0
+R4
+R5
+R6
+L0 31188
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vdcfifo_sync
+R2
+!i10b 1
+!s100 RG:oS1F40NFFOXgL59mz12
+Imf;>2XYkP5E:izFIO6[TO3
+R3
+R0
+R4
+R5
+R6
+L0 30261
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vDecimate
+R12
+!i10b 1
+!s100 n49lbATI`R:JYRn[6D7Ql1
+I6_QXIH0cSjR?VZE=fi>m:1
+R3
+R0
+w1702290961
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Decimate.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Decimate.v
+L0 15
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Decimate.v|
+!s90 -reportprogress|300|-work|CIC_ISOP_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Decimate.v|
+!i113 0
+R11
+R1
+n@decimate
+vdffp
+R12
+!i10b 1
+!s100 `N:3@21P33N<eWgO_]_0d0
+IcQe>7;YU9Cd0`=X8]Q[Nb2
+R3
+R0
+R4
+R5
+R6
+L0 2195
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vdummy_hub
+R2
+!i10b 1
+!s100 _NoKgzE5?0PKX53>ZXDn`3
+IGiJBE`YK5zYOZWTTTnhIB0
+R3
+R0
+R4
+R5
+R6
+L0 51835
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vflexible_lvds_rx
+R2
+!i10b 1
+!s100 02:Gcb6^@@dZV1TIo<nfW0
+Ieg;Y>2T<Xhn`]SEKEXZXK1
+R3
+R0
+R4
+R5
+R6
+L0 25749
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vflexible_lvds_tx
+R2
+!i10b 1
+!s100 <>;Yld:UUG3iYOl5o=<W<1
+Iof4LAh03`657427YNS_kG1
+R3
+R0
+R4
+R5
+R6
+L0 28985
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vHalfBand
+R12
+!i10b 1
+!s100 PHBC9JWj2b8NmeKhWnjaV0
+Ic3`hh>4=lJJ0SXD9i3?dH2
+R3
+R0
+w1702350073
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/HalfBand.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/HalfBand.v
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/HalfBand.v|
+!s90 -reportprogress|300|-work|CIC_ISOP_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/HalfBand.v|
+!i113 0
+R11
+R1
+n@half@band
+vIntegrated
+R12
+!i10b 1
+!s100 X8n9WNaGWD0FHoJKP1n_50
+Icj;j5S<^aMB]@^_omHJYV3
+R3
+R0
+w1702291149
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Integrated.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Integrated.v
+R13
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Integrated.v|
+!s90 -reportprogress|300|-work|CIC_ISOP_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Integrated.v|
+!i113 0
+R11
+R1
+n@integrated
+vIsop
+R12
+!i10b 1
+!s100 lFV3VW`?LzNnaN5EceH621
+IXTFF02MSDVY]1dERMO32d1
+R3
+R0
+w1702292524
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Isop.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Isop.v
+L0 16
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Isop.v|
+!s90 -reportprogress|300|-work|CIC_ISOP_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Isop.v|
+!i113 0
+R11
+R1
+n@isop
+vjtag_tap_controller
+R2
+!i10b 1
+!s100 ?]ofIQc5>JzH2bO?VH=J;3
+IFP4d9ZV=EoBfW>eW<M0ZA1
+R3
+R0
+R4
+R5
+R6
+L0 51378
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vlcell
+R12
+!i10b 1
+!s100 bennFdYA;E0lM[zHEL7e`1
+I`R`j3<;n[[YB<_3lOI[2@3
+R3
+R0
+R4
+R5
+R6
+L0 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R1
+vlpm_abs
+R12
+!i10b 1
+!s100 <eMUJ2Bc:0iJb^8e`knSV1
+I_E<7Kz`?9IM5J>o6X9HI=3
+R3
+R0
+Z14 w1382637203
+Z15 8F:/Altera/13.1/quartus/eda/sim_lib/220model.v
+Z16 FF:/Altera/13.1/quartus/eda/sim_lib/220model.v
+L0 3463
+R7
+r1
+!s85 0
+31
+R8
+Z17 !s107 F:/Altera/13.1/quartus/eda/sim_lib/220model.v|
+Z18 !s90 -reportprogress|300|-work|CIC_ISOP_HB|-vopt|-stats=none|F:/Altera/13.1/quartus/eda/sim_lib/220model.v|
+!i113 0
+R11
+R1
+vlpm_add_sub
+R12
+!i10b 1
+!s100 eVzVf1n<=KWP0`Z;R:4NJ0
+IM`D>ZG]iVkA95]G2S>MMN3
+R3
+R0
+R14
+R15
+R16
+L0 2604
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_and
+R12
+!i10b 1
+!s100 lXM8YjE69L23k[oFIYm4l0
+IHWY7RCefZEQgmT6=57Djm0
+R3
+R0
+R14
+R15
+R16
+L0 1680
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_bipad
+R12
+!i10b 1
+!s100 d7c7;5C`<V5moD<]7UPO42
+IC3ZZGTlIB@bOMd2m5WY6[0
+R3
+R0
+R14
+R15
+R16
+L0 6674
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_bustri
+R12
+!i10b 1
+!s100 9NWWPK9RNgWL`a_4f9Z0E3
+IEaDYm1>M0oBBWzZMb:o0e3
+R3
+R0
+R14
+R15
+R16
+L0 1970
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_clshift
+R12
+!i10b 1
+!s100 K1ijz]Rl7D9Q6fZ;`NeGT2
+ISl?kK26VNG@_;R[=RcAe=1
+R3
+R0
+R14
+R15
+R16
+L0 2319
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_compare
+R12
+!i10b 1
+!s100 J2[DFG750;nbjKz:?d]zR0
+Ilh:OCJoBN`e_<7a9;4>dE0
+R3
+R0
+R14
+R15
+R16
+L0 2810
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_constant
+R12
+!i10b 1
+!s100 EF]J1S6?FKA:g@jdYona_3
+IgOjA;iClPKiX7=DA8SfKA3
+R3
+R0
+R14
+R15
+R16
+L0 1576
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_counter
+R12
+!i10b 1
+!s100 eSkTM3AiEP0_^>g77XAXn1
+IGd^P`ElFW1>D:S4EAmTn61
+R3
+R0
+R14
+R15
+R16
+L0 3527
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_decode
+R12
+!i10b 1
+!s100 =lV7oGJS;k3OJdIi6LZI_0
+IdVY3dV^ZHK1@FTHQ^WezV2
+R3
+R0
+R14
+R15
+R16
+L0 2191
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vLPM_DEVICE_FAMILIES
+R12
+!i10b 1
+!s100 []M^9Fo8DSOPaNYHkT3QT0
+IJnSWQAjInPFNTOFlnn7ib1
+R3
+R0
+R14
+R15
+R16
+L0 1367
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+n@l@p@m_@d@e@v@i@c@e_@f@a@m@i@l@i@e@s
+vlpm_divide
+R12
+!i10b 1
+!s100 RmnTinFiFUGDJV6g^BAMT1
+IFl7QJMoNEGJ=>8?ddRZCd1
+R3
+R0
+R14
+R15
+R16
+L0 3256
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_ff
+R12
+!i10b 1
+!s100 Hm<PMO28lBXYC[`l0l4K13
+I`amSJze47dSC`C2IW^?[X3
+R3
+R0
+R14
+R15
+R16
+L0 3935
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_fifo
+R12
+!i10b 1
+!s100 zlR`ilPP_6<azoT`F3=FV0
+IgRobZd]cWIh5H6`VoQoVS2
+R3
+R0
+R14
+R15
+R16
+L0 5382
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_fifo_dc
+R12
+!i10b 1
+!s100 <8QF96S@z75V3EzZn_Y:<3
+I3]SUOLUG1Sj<O^oaKKk?W1
+R3
+R0
+R14
+R15
+R16
+L0 6439
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_fifo_dc_async
+R12
+!i10b 1
+!s100 9e8_daW;h[FHI[zn@1S;l3
+I:1z`IeWIJHCHdKL3QEh^42
+R3
+R0
+R14
+R15
+R16
+L0 6002
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_fifo_dc_dffpipe
+R12
+!i10b 1
+!s100 3cDHAhhCfCUdbaBCADdQT0
+I4oC2_klD2o@dX8JJXJ`eE1
+R3
+R0
+R14
+R15
+R16
+L0 5713
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_fifo_dc_fefifo
+R12
+!i10b 1
+!s100 z`AfG3CA8>1ZfA[[5flWH2
+If7AkQzDzb=Si::zam^[eJ0
+R3
+R0
+R14
+R15
+R16
+L0 5800
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vLPM_HINT_EVALUATION
+R12
+!i10b 1
+!s100 `WKMS]SM@JbIe0gCi<3f82
+IX21jj^_9H?[j>WIW8Ce3I2
+R3
+R0
+R14
+R15
+R16
+L0 1257
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+n@l@p@m_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
+vlpm_inpad
+R12
+!i10b 1
+!s100 0>Hk5GBQ643ZVi:cBU:1Q0
+I0@91dhHY21d>Pgo0H8iKA3
+R3
+R0
+R14
+R15
+R16
+L0 6562
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_inv
+R12
+!i10b 1
+!s100 WG?R_5=XlmAMlWhoF>04M1
+I;gbLSMIiF9z]ajI3j0VXX1
+R3
+R0
+R14
+R15
+R16
+L0 1627
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_latch
+R12
+!i10b 1
+!s100 kd>fjaE69;g6M>TOd74ek3
+I9<dOnGDDjS72e?0GT=M;?1
+R3
+R0
+R14
+R15
+R16
+L0 3811
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vLPM_MEMORY_INITIALIZATION
+R12
+!i10b 1
+!s100 DR_SV_J4fzH0gTOLESO6;1
+IEiUf>YH[egWoDDReL[:S:3
+R3
+R0
+R14
+R15
+R16
+L0 77
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+n@l@p@m_@m@e@m@o@r@y_@i@n@i@t@i@a@l@i@z@a@t@i@o@n
+vlpm_mult
+R12
+!i10b 1
+!s100 CRBa:a@HT9EI<17@iBHTz2
+IV5b=3P5H[@YA6[oV1W;;21
+R3
+R0
+R14
+R15
+R16
+L0 2984
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_mux
+R12
+!i10b 1
+!s100 :kkPFlMl<M3V_dNzCLIT83
+ISVWE8iM_MGGfY;E7kBzbF0
+R3
+R0
+R14
+R15
+R16
+L0 2056
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_or
+R12
+!i10b 1
+!s100 KRg>B6I40QBebh0C2:7^73
+IEl_Aaddcd3zRIGX<XWm4C2
+R3
+R0
+R14
+R15
+R16
+L0 1760
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_outpad
+R12
+!i10b 1
+!s100 S_z=ic3?<Kl41^;8=6M=X1
+I8U7?7@7f=4G;m[<RVOW7g3
+R3
+R0
+R14
+R15
+R16
+L0 6618
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 0
+R11
+R1
+vlpm_ram_dp
+R12
+!i10b 1
+!s100 C4CRM[JiWl69HF

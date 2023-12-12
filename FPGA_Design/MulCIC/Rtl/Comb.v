@@ -13,6 +13,7 @@ reg signed [16:0]	d1,d2,d3,d4;
 wire signed [16:0]	c1,c2;
 wire signed [16:0]	You_tem;
 
+
 //3级梳状器结构
 always@(posedge rst or posedge clk)
 	if(rst)
@@ -36,6 +37,6 @@ assign c1 = (rst ? 17'd0 : (d1-d2));
 assign c2 = (rst ? 17'd0 : (c1-d3));
 assign You_tem = (rst ? 17'd0 : (c2-d4));
 assign Yout = You_tem[16:0];
-	
+
 
 endmodule

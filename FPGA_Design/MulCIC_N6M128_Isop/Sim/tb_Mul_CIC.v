@@ -29,7 +29,7 @@ module tb_Mul_CIC;
 	
 	parameter Data_len = 22'd2097152;	//数据长度2^21（根据Sigma-Delta调制器输出bit流数据量）
     reg signed[1:0] mem[Data_len-1:0];  //定义长度为Data_len，位宽深度为10的寄存器mem
-    
+
 
 
     // define reset time
@@ -39,6 +39,7 @@ module tb_Mul_CIC;
         #1500;
         rst = 0;
         clk = 0;
+	
     end
     
     initial
