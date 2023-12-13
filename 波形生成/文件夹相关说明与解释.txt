@@ -1,0 +1,30 @@
+231212
+I/O程序套件：用于获取ID以及识别Keysight公司的设备
+下载网址：https://www.keysight.com.cn/cn/zh/lib/software-detail/computer-software/io-libraries-suite-downloads-2175637.html）
+	通过安装Keysight公司的I/O程序套件可以查看，每台电脑有一个专属的HOST ID
+	本机的HOST ID：
+	DESKTOP-I4KFVV7
+	PCSERNO,GG65385428
+
+ Keysight BenchLink Waveform Builder 软件：用于生成任意的波形，或者将Matlab产生的数据（.csv/.bin格式）导成对应格式，设置相关参数，然后发送给信号发生器。实验用的是33512B型号的Agilent信号发生器。
+下载网址：
+https://www.keysight.com/us/en/lib/software-detail/computer-software/33503b-benchlink-waveform-builder-pro-software.html
+https://edadocs.software.keysight.com/kkbopen/30-589315276.html
+license申请网站：如何进行Keysight的Trial License Request
+https://ksm.software.keysight.com/trial-license?ProdNum=33503B-TRL&Code=gAAAAABleFKdneTNJNWuS7dYCEtzs7GFx0lcHg5svxyYma0ESAtqSLPTAzieipzS69wALVTpvd6fUNf7RO0iXfEV-BGVOx8gqw==
+详细安装流程可在有道云笔记的检索：KEYSIGHT
+
+231213
+8-KB3-33500和33600系列导入任意波形的几种方法.docx 这篇文档详细介绍了几种导入信号发生器任意波形的方法
+	1、一种是利用USB将数据包含的.csv文件放入。这个理应是最简单的一种方法，但是这个信号发生器检测不到USB。而检测到USB的又不支持任意波形导入；
+	2、第二种就是利用上述的 Keysight BenchLink Waveform Builder软件将.csv文件格式的数据导入为波形，然后设置波形参数，最终发送给信号发生器。（前提是已经建立了连接，我用的是网口线连接lan）
+
+Bit_Stream.csv 是通过MATLAB仿真5阶Sigma-Delta输出的Bit流信号，经过量化为1，-1输出，采样频率为512KHz，这里去了512000个点，共1s的时间。
+	        该bit流所含信号为30Hz,所以包含了30个周期的有效信号
+WAVEF001_512KHz_1s.barb 将bit流数据导入后保存的波形，可以下次打开时再次使用
+示波器bit流波形文件夹   利用将波形导入信号发生器然后接到示波器，将示波器截图保存到usb后获取到的图像
+GDS-3000中文操作手册_示波器.pdf 有关于如何保存示波器图像的方法
+
+
+
+
