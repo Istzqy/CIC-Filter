@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Dec 18 22:30:33 2023
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : Mul_CIC
+Top-level Entity Name : Mul_CIC
+Family : Cyclone IV E
+Device : EP4CE115F23I7
+Timing Models : Final
+Total logic elements : 4,514 / 114,480 ( 4 % )
+    Total combinational functions : 2,896 / 114,480 ( 3 % )
+    Dedicated logic registers : 3,102 / 114,480 ( 3 % )
+Total registers : 3102
+Total pins : 69 / 281 ( 25 % )
+Total virtual pins : 0
+Total memory bits : 19,968 / 3,981,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 30 / 532 ( 6 % )
+Total PLLs : 1 / 4 ( 25 % )
