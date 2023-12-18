@@ -43,3 +43,25 @@ for k=1:length(y_n)
 end
 
 fclose(fid);
+
+%% 将bit的txt文件转换成csv文件
+%fid=fopen('D:\FPGA_MATLAB_Learning\CIC_Filter\FPGA_Design\MulCIC_Isop_HB\Sim\Bit_Stream.txt','r');    %把数据写入sin_data.txt文件中，如果没有就创建该文件  
+clear all;
+data = importdata('D:\FPGA_MATLAB_Learning\CIC_Filter\FPGA_Design\MulCIC_Isop_HB\Sim\Bit_Stream.txt');
+% fid = fopen('D:\FPGA_MATLAB_Learning\CIC_Filter\FPGA_Design\MulCIC_Isop_HB\Sim\Bit_Stream.txt', 'r');
+% data = fread(fid, Inf, 'char');
+% fclose(fid);
+for k=1:length(data)
+    if(data(k)==1)
+        output(k) = 1;
+    else
+        output(k) = -1;
+    end
+end
+% 可以选择将数据保存到另一个文件中
+writematrix(output','D:\FPGA_MATLAB_Learning\CIC_Filter\FPGA_Design\MulCIC_Isop_HB\Sim\Bit_Stream.csv');
+
+
+
+
+

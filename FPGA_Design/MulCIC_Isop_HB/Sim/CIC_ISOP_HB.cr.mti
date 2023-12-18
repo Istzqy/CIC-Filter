@@ -5,6 +5,20 @@ Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 Top level modules:
 	Clk_Div
 
+} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Integrated.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Integrated.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Integrated
+
+Top level modules:
+	Integrated
+
+} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Isop.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Isop.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Isop
+
+Top level modules:
+	Isop
+
 } {} {}} F:/Altera/13.1/quartus/eda/sim_lib/220model.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none F:/Altera/13.1/quartus/eda/sim_lib/220model.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 -- Compiling module LPM_MEMORY_INITIALIZATION
@@ -70,33 +84,12 @@ Top level modules:
 	lpm_outpad
 	lpm_bipad
 
-} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Isop.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Isop.v
+} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Mul_CIC.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Mul_CIC.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module Isop
+-- Compiling module Mul_CIC
 
 Top level modules:
-	Isop
-
-} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Integrated.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Integrated.v
-Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module Integrated
-
-Top level modules:
-	Integrated
-
-} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Sim/tb_Mul_CIC.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Sim/tb_Mul_CIC.v
-Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module tb_Mul_CIC
-
-Top level modules:
-	tb_Mul_CIC
-
-} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Decimate.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Decimate.v
-Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module Decimate
-
-Top level modules:
-	Decimate
+	Mul_CIC
 
 } {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/HalfBand.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/HalfBand.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
@@ -105,12 +98,26 @@ Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 Top level modules:
 	HalfBand
 
-} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Mul_CIC.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Mul_CIC.v
+} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Decimate.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Decimate.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module Mul_CIC
+-- Compiling module Decimate
 
 Top level modules:
-	Mul_CIC
+	Decimate
+
+} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Sim/tb_Mul_CIC.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Sim/tb_Mul_CIC.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module tb_Mul_CIC
+
+Top level modules:
+	tb_Mul_CIC
+
+} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Comb.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Comb.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Comb
+
+Top level modules:
+	Comb
 
 } {} {}} F:/Altera/13.1/quartus/eda/sim_lib/altera_mf.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none F:/Altera/13.1/quartus/eda/sim_lib/altera_mf.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
@@ -237,12 +244,5 @@ Top level modules:
 	altserial_flash_loader
 	sld_virtual_jtag_basic
 	altsource_probe
-
-} {} {}} D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Comb.v {1 {vlog -work CIC_ISOP_HB -vopt -stats=none D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Rtl/Comb.v
-Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module Comb
-
-Top level modules:
-	Comb
 
 } {} {}}

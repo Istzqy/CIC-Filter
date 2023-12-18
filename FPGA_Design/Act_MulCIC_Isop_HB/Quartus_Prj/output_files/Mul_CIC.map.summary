@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Dec 17 14:11:40 2023
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : Mul_CIC
+Top-level Entity Name : Mul_CIC
+Family : Cyclone IV E
+Total logic elements : 2,144
+    Total combinational functions : 1,921
+    Dedicated logic registers : 870
+Total registers : 870
+Total pins : 68
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 30
+Total PLLs : 1
