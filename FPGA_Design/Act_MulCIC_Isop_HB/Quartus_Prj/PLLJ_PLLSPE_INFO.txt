@@ -1,0 +1,5 @@
+PLL_Name	Clk_Div:u4|altpll:altpll_component|Clk_Div_altpll:auto_generated|pll1
+PLLJITTER	55
+PLLSPEmax	84
+PLLSPEmin	-53
+
