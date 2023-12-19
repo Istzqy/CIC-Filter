@@ -27,10 +27,11 @@ module tb_Mul_CIC;
     wire signed [63:0] filter_out;	//抽取滤波输出
 	wire rdy;
 	
-	parameter Data_len = 22'd2097152;	//数据长度2^21（根据Sigma-Delta调制器输出bit流数据量）
-    reg   mem[Data_len-1:0];  //定义长度为Data_len，位宽深度为1的寄存器mem
+	//parameter Data_len = 22'd2097152;	//数据长度2^21（根据Sigma-Delta调制器输出bit流数据量）
+    parameter Data_len = 22'd460801;	//选取0.9s的数据测试
+	reg   mem[Data_len-1:0];  //定义长度为Data_len，位宽深度为1的寄存器mem
 
-
+	
 
     // define reset time
     initial 
@@ -45,7 +46,7 @@ module tb_Mul_CIC;
     initial
         begin
 			//读取bit流文件
-            $readmemb("D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Sim/Bit_Stream_Cov.txt",mem);
+            $readmemb("D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Sim/Bit_Stream_Sweep_Cov.txt",mem);
         end
     integer i=0;
     initial begin
