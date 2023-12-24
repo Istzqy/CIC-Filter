@@ -29,6 +29,20 @@ GDS-3000中文操作手册_示波器.pdf 有关于如何保存示波器图像的
 Bit_Stream_Sweep.csv 包含60Hz,15Hz,30Hz 信号的bit流。采样率512KHz，460800个点，即0.9s的数据（0~0.3s 60Hz , 0.3~0.6s 15Hz , 0.6~0.9s 30Hz）。
 WAVEF_512KHz_0.9s_sweep.barb  将Bit_Stream_Sweep.csv导入Waveform Builder软件后生成的波形文件，可导入Agilent的信号发生器
 
+231224
+Bit_Stream_Sweep_321.csv/.txt 1s的扫频bit流信号，30Hz,20Hz,10Hz(不同段信号的幅值不同)
+Bit_Stream_Sweep_321Cov.txt 1s的扫频bit流信号(0,1)，30Hz,20Hz,10Hz(不同段信号的幅值不同)
+Bit_Stream_Sweep_3015.csv  1.2s的扫频bit流信号，30Hz,30Hz、15Hz(不同段信号的幅值不同)
+Bit_Stream_Sweep_3015_0.66s.csv  0.66s的扫频bit流信号，30Hz,30Hz、15Hz(不同段信号的幅值不同)
+Bit_Stream_Sweep_3015_T0.66.txt  0.66s的扫频bit流信号(+1,-1 二进制补码表示)，30Hz,30Hz、15Hz(不同段信号的幅值不同)
+Bit_Stream_Sweep_3015__T0.66Cov.txt 0.66s的扫频bit流信号(0,1)，30Hz,30Hz,10Hz(不同段信号的幅值不同)
+SweepSignal_3015_0.66s.csv	0.66s的扫频原始信号，30Hz,30Hz、15Hz(不同段信号的幅值不同)
+
+
+
+
+
+
 
 
 
