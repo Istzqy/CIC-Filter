@@ -1,15 +1,15 @@
 %
-%    代码功能：将FPGA发送至串口助手的数据复制到txt文本，在Matlab中读取txt文本数据。
+%    代码功能：将FPGA发送至串口助手的数据复制到txt文本，在Matlab中读取txt文本数据
 %             首先对数据进行进制转换，从有符号的十六进制数转换为有符号的十进制数
 %    修改日期：2023.12.21     
 %    作者：张启元
 %    地点：东南大学
-%%
+%% 
 clc;
 clear all;
 %按照字符串读取txt中的数据，读取的16进制数被存为1个元胞数组
-data1 = textread('D:\Keyan\Matlab开发\CIC_Filter\Data_Process\data6_30Hz_256000_512K_1221_red.txt','%s')';
-data2 = textread('D:\Keyan\Matlab开发\CIC_Filter\Data_Process\data7_sweep_256000_512K_1221_red.txt','%s')';
+data1 = textread('D:\FPGA_MATLAB_Learning\CIC_Filter\Data_Process\data6_30Hz_256000_512K_1221_red.txt','%s')';
+data2 = textread('D:\FPGA_MATLAB_Learning\CIC_Filter\Data_Process\data10_sweep_303015_256000_512K_1.2s_1224_red.txt','%s')';
 %将十六进制数转换为无符号二进制数
 data1_dec = hex2dec(data1);
 data2_dec = hex2dec(data2);
