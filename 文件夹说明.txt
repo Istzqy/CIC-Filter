@@ -1,4 +1,4 @@
-该文件夹涉及CIC滤波器相关Matlab仿真与Verilog仿真
+该文件夹涉及CIC滤波器相关Matlab仿真与Verilog仿真，更多设计细节可以查阅有道云笔记中FPGA开发->CIC滤波以及相关数字信号处理
 
 HDL文件夹 	是利用上述CIC_Filter_R128_N5.fda设计的滤波器导出的verilog HDL 代码及其testbench文件
 CIC文献文件夹	国内相关抽取滤波器的论文
