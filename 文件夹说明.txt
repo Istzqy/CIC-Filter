@@ -35,3 +35,5 @@ CIC_Filter_fs512k_M128_N5.fda 	 利用MTALAB中的Filter Designer工具设计的
 CIC_Filter_R128_N5.fda  	 利用MTALAB中的Filter Designer工具设计的5阶，128抽取，采样频率为2MHz的CIC滤波器
 Half_Band_Filter_fs4k_fc500.fda   利用MTALAB中的Filter Designer工具设计的采样频率为4KHz、通带宽为500Hz,通带与阻带纹波均为0.001dB
 
+CIC设计草稿.docx	关于抽取滤波MATLAB仿真内容的描述
+加速度计1224_实验_leeGai_4.docx		陈大论文所有内容，其中包含了抽取滤波的仿真与实验内容
