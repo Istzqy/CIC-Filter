@@ -1,0 +1,3 @@
+MEMS_Gyro_Matlab_Simulation文件夹对质量块中的相关Simulink仿真复现：陀螺结构运动方程、自激振荡闭环驱动模态、PLL闭环驱动、开环与闭环检测等
+CIC_Filter 设计了抽取滤波器包括CIC滤波器、ISOP补偿器、半带滤波器 包含MATLAB仿真、FPGA设计工程、串口滤波数据处理、相关仿真与实验结果
+chuqby_accel2 褚神关于Sigma-Delta调制器的相关仿真

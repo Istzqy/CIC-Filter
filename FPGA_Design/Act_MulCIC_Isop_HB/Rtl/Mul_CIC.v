@@ -13,13 +13,13 @@
 
 module Mul_CIC(
 	rst,clk,Bit_in,
-	Filter_out,rdy
+	tx,rdy
 );
 
 input	rst;			//复位信号，高电平有效
 input	clk;			//FPGA系统时钟，频率为50MHz
 input	Bit_in;			//高低电平bit流数据输入频率为512kHz
-output	signed [63:0]	Filter_out;	//滤波后的输出数据
+output	tx;
 output 			rdy;	//数据有效指示信号
 
 wire clk_div;				//PLL分频IP核分频输出：512KHz
@@ -30,19 +30,24 @@ wire signed [43:0] Intout;	//积分器输出
 wire signed [43:0] Combout;	//梳状器输出
 wire signed [43:0] dout;	//抽取输出
 wire signed [46:0] Isopout;	//补偿器输出
+wire	signed [63:0]	Filter_out;	//半带滤波后的输出数据
+wire	Fo_flag;	//半带滤波完成标志
 //wire signed [36:0] yt;
 assign rdy = ND;
 
+parameter	UART_BPS = 20'd256000,		//波特率
+			CLK_FREQ = 26'd50_000_000;	//时钟频率
+
 //积分器例化
 Integrated u1(
-	.rst(rst),
+	.rst(~rst),
 	.clk(clk_div),
 	.Xin(Bit_out),
 	.Intout(Intout)
 );
 //抽取例化
 Decimate u2(
-	.rst(rst),
+	.rst(~rst),
 	.clk(clk_div),
 	.Iin(Intout),
 	.dout(dout),
@@ -50,7 +55,7 @@ Decimate u2(
 );
 //梳状器例化
 Comb u3(
-	.rst(rst),
+	.rst(~rst),
 	.clk(clk_div),
 	.ND(ND),
 	.Xin(dout),
@@ -58,14 +63,14 @@ Comb u3(
 );
 //分频器例化:将实际输入50MHz分频为512KHz
 Clk_Div u4(
-	.areset(rst),
+	.areset(~rst),
 	.inclk0(clk),
 	.c0(clk_div),
 	.locked(locked)
 );
 //补偿器例化
 Isop u5(
-	.rst(rst),
+	.rst(~rst),
 	.clk(clk_div),
 	.ND(ND),
 	.IsopIn(Combout),
@@ -73,19 +78,34 @@ Isop u5(
 );
 //2抽取半带滤波器例化
 HalfBand u6(
-	.rst(rst),
+	.rst(~rst),
 	.clk(clk_div),
 	.ND(ND),
 	.HBIN(Isopout),
-	.HBout(Filter_out)
+	.HBout(Filter_out),
+	.Fo_flag(Fo_flag)
 	
 );
 //高低电平Bit流输入量化转换
 In_Convert u7(
-	.rst(rst),
+	.rst(~rst),
 	.clk(clk_div),
 	.Bit_in(Bit_in),
 	.Bit_out(Bit_out)
+);
+uart_tx
+#(
+	.UART_BPS(	UART_BPS )	,	//串口波特率
+	.CLK_FREQ(CLK_FREQ)			//时钟频率
+)
+u8
+(
+	.sys_clk(clk),
+	.sys_rst_n(rst),
+	.pi_data(Filter_out),
+	.pi_flag(Fo_flag),
+	
+	.tx(tx)
 );
 
 

@@ -9,16 +9,16 @@ z2
 cModel Technology
 dD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/MulCIC_Isop_HB/Sim
 T_opt
-!s110 1702969986
-VR?l3UZ]C6a8C5KQAGGh501
+!s110 1703487152
+V>]4T76af;zINf<VzNQEkR1
 04 10 4 work tb_Mul_CIC fast 0
-=1-6c24082544b2-65814282-6a-1c94
+=3-6c24082544b2-658926b0-236-930
 o-quiet -auto_acc_if_foreign -work Act_MulCIC_Isop_HB +acc
 Z0 tCvgOpt 0
 n@_opt
 OL;O;10.6d;65
 va_graycounter
-Z1 !s110 1702969953
+Z1 !s110 1703487148
 !i10b 1
 !s100 FI?[k<oCFi9HWYigXHGcf0
 I2m4AKD1?XlMSo41lGlTL=1
@@ -32,7 +32,7 @@ Z7 OL;L;10.6d;65
 r1
 !s85 0
 31
-Z8 !s108 1702969953.000000
+Z8 !s108 1703487148.000000
 Z9 !s107 F:/Altera/13.1/quartus/eda/sim_lib/altera_mf.v|
 Z10 !s90 -reportprogress|300|-work|Act_MulCIC_Isop_HB|-vopt|-stats=none|F:/Altera/13.1/quartus/eda/sim_lib/altera_mf.v|
 !i113 0
@@ -651,7 +651,7 @@ R10
 R11
 R0
 valtsource_probe
-R1
+Z12 !s110 1703487149
 !i10b 1
 !s100 0H^flEVSMh@bBU^0XYX_e1
 I8MGVh7Uj<V>V>FMFR0S640
@@ -882,7 +882,7 @@ R10
 R11
 R0
 vClk_Div
-Z12 !s110 1702969952
+R1
 !i10b 1
 !s100 C=zfgBQAlhD_SKD[KJFU11
 Il6g<@c1;PZ1[fLOQhm[Ak0
@@ -896,7 +896,7 @@ R7
 r1
 !s85 0
 31
-Z13 !s108 1702969952.000000
+R8
 !s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Quartus_Prj/Clk_Div.v|
 !s90 -reportprogress|300|-work|Act_MulCIC_Isop_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Quartus_Prj/Clk_Div.v|
 !i113 0
@@ -904,7 +904,7 @@ R11
 R0
 n@clk_@div
 vComb
-R12
+R1
 !i10b 1
 !s100 Xh5OjK>FYOHN`8V>Q:kj<2
 In5e2WHSfU=RH1>IBlz_ML3
@@ -913,12 +913,12 @@ R3
 w1702303727
 8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Comb.v
 FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Comb.v
-Z14 L0 14
+Z13 L0 14
 R7
 r1
 !s85 0
 31
-R13
+Z14 !s108 1703487147.000000
 !s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Comb.v|
 !s90 -reportprogress|300|-work|Act_MulCIC_Isop_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Comb.v|
 !i113 0
@@ -1094,7 +1094,7 @@ R10
 R11
 R0
 vDecimate
-R12
+R1
 !i10b 1
 !s100 n49lbATI`R:JYRn[6D7Ql1
 IZQ7ShKIOl3A8DR2GN?Nm70
@@ -1108,7 +1108,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 !s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Decimate.v|
 !s90 -reportprogress|300|-work|Act_MulCIC_Isop_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Decimate.v|
 !i113 0
@@ -1200,13 +1200,13 @@ R10
 R11
 R0
 vHalfBand
-R12
+R1
 !i10b 1
-!s100 4RLiA?zZ0[GZQb9?MPIl>2
-IlD<@dma9TjYiP`@T;A6a>1
+!s100 bDc_ePWV6k5oj:fBe@IAG0
+I7NC_6oL@GZU5`@a8afYk20
 R2
 R3
-w1702352797
+w1703486332
 8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/HalfBand.v
 FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/HalfBand.v
 L0 1
@@ -1214,7 +1214,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 !s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/HalfBand.v|
 !s90 -reportprogress|300|-work|Act_MulCIC_Isop_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/HalfBand.v|
 !i113 0
@@ -1222,7 +1222,7 @@ R11
 R0
 n@half@band
 vIn_Convert
-R12
+R1
 !i10b 1
 !s100 ]d335VAL[Z]c7gOJYgJ5d2
 I`oC0ROLLCl_Re;m=REP2a0
@@ -1231,12 +1231,12 @@ R3
 w1702538140
 8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/In_Convert.v
 FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/In_Convert.v
-R14
+R13
 R7
 r1
 !s85 0
 31
-R13
+R8
 !s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/In_Convert.v|
 !s90 -reportprogress|300|-work|Act_MulCIC_Isop_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/In_Convert.v|
 !i113 0
@@ -1244,7 +1244,7 @@ R11
 R0
 n@in_@convert
 vIntegrated
-R12
+R1
 !i10b 1
 !s100 X8n9WNaGWD0FHoJKP1n_50
 ILZ_iPE<dbE3_Z_Zbhf`l90
@@ -1253,12 +1253,12 @@ R3
 w1702291149
 8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Integrated.v
 FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Integrated.v
-R14
+R13
 R7
 r1
 !s85 0
 31
-R13
+R8
 !s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Integrated.v|
 !s90 -reportprogress|300|-work|Act_MulCIC_Isop_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Integrated.v|
 !i113 0
@@ -1266,7 +1266,7 @@ R11
 R0
 n@integrated
 vIsop
-R12
+R1
 !i10b 1
 !s100 lFV3VW`?LzNnaN5EceH621
 I_:FZX:Q>4TbT5cKKc`fjo0
@@ -1280,7 +1280,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 !s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Isop.v|
 !s90 -reportprogress|300|-work|Act_MulCIC_Isop_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Isop.v|
 !i113 0
@@ -1344,7 +1344,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 Z18 !s107 F:/Altera/13.1/quartus/eda/sim_lib/220model.v|
 Z19 !s90 -reportprogress|300|-work|Act_MulCIC_Isop_HB|-vopt|-stats=none|F:/Altera/13.1/quartus/eda/sim_lib/220model.v|
 !i113 0
@@ -1365,7 +1365,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1386,7 +1386,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1407,7 +1407,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1428,7 +1428,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1449,7 +1449,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1470,7 +1470,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1491,7 +1491,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1512,7 +1512,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1533,7 +1533,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1554,7 +1554,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1576,7 +1576,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1597,7 +1597,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1618,7 +1618,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1639,7 +1639,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1660,7 +1660,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1681,7 +1681,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1702,7 +1702,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1723,7 +1723,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1745,7 +1745,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1766,7 +1766,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1787,7 +1787,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1808,7 +1808,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1830,7 +1830,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1851,7 +1851,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1872,7 +1872,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1893,7 +1893,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1914,7 +1914,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1935,7 +1935,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1956,7 +1956,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1977,7 +1977,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -1998,7 +1998,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -2019,7 +2019,7 @@ R7
 r1
 !s85 0
 31
-R13
+R8
 R18
 R19
 !i113 0
@@ -2224,21 +2224,21 @@ R11
 R0
 n@m@f_stratixiii_pll
 vMul_CIC
-R12
+R1
 !i10b 1
-!s100 7C2?@;i007h1iBBh1MRnc3
-IWGFalCOl7Nl^VFY=lo=3Z1
+!s100 JRGhd394h?2UO:2Za0]C63
+ImeFT@bA<KnBjA>:CWC[N_2
 R2
 R3
-w1702541352
+w1703487140
 8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Mul_CIC.v
 FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Mul_CIC.v
-R14
+R13
 R7
 r1
 !s85 0
 31
-R13
+R8
 !s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Mul_CIC.v|
 !s90 -reportprogress|300|-work|Act_MulCIC_Isop_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/Mul_CIC.v|
 !i113 0
@@ -2372,7 +2372,7 @@ R10
 R11
 R0
 vsld_virtual_jtag_basic
-R1
+R12
 !i10b 1
 !s100 YTPka:zjzVSUB[A:Lm9c51
 I67e`5@amJH[o<;GN]oH^F3
@@ -2645,13 +2645,13 @@ R10
 R11
 R0
 vtb_Mul_CIC
-R12
+!s110 1703487147
 !i10b 1
-!s100 g?hk`_^KeMe=8HfA9D_5Z2
-I66NMX@enNEJAn8SdlnH^`1
+!s100 hfFEnX30@@:<ES2?9@IF73
+Ijk]PcD3jTTIo939_DVMN53
 R2
 R3
-w1702969938
+w1703487075
 8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Sim/tb_Mul_CIC.v
 FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Sim/tb_Mul_CIC.v
 L0 19
@@ -2659,7 +2659,7 @@ R7
 r1
 !s85 0
 31
-R13
+R14
 !s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Sim/tb_Mul_CIC.v|
 !s90 -reportprogress|300|-work|Act_MulCIC_Isop_HB|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Sim/tb_Mul_CIC.v|
 !i113 0
@@ -2728,4 +2728,25 @@ R9
 R10
 !i113 0
 R11
+R0
+vuart_tx
+R12
+!i10b 1
+!s100 >2nb?9kzJ7SDKdVYFlnZ;2
+I7jgFRjb>R=>XTKoaWmnFa0
+R2
+R3
+w1703475925
+8D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/uart_tx.v
+FD:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/uart_tx.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1703487149.000000
+!s107 D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/uart_tx.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/FPGA_MATLAB_Learning/CIC_Filter/FPGA_Design/Act_MulCIC_Isop_HB/Rtl/uart_tx.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R0
