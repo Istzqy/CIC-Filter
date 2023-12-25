@@ -1,7 +1,7 @@
 module HalfBand(
 	
 	rst,clk,HBIN,ND,
-	HBout
+	HBout,Fo_flag
 );
 
 input	rst;	//复位信号
@@ -9,7 +9,7 @@ input	clk;	//系统时钟512KHz
 input	ND;		//前级抽取完成标志（频率为4KHz的脉冲）
 input	signed 	[46:0]	HBIN;	//Isop补偿器输出作为输入
 output	reg signed	[63:0]	HBout;	//半带滤波器输出
-
+output	reg	Fo_flag;	//半带滤波器完成标志
 
 
 /* always@(posedge clk or posedge rst)
@@ -75,5 +75,13 @@ always@(posedge clk or posedge rst)
 		end
 			
 //assign HBout = (rst ? 64'd0 : (down_sp)? out_tem);
+
+//滤波完成标志
+always@(posedge clk or posedge rst)
+	if(rst)
+		Fo_flag <= 1'd0;
+	else
+		Fo_flag <= down_sp;
+
 endmodule
 

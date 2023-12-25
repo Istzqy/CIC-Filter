@@ -24,11 +24,12 @@ module tb_Mul_CIC;
     reg filter_in;		//高低电平bit流输入
 
     // Outputs
-    wire signed [63:0] filter_out;	//抽取滤波输出
+    //wire signed [63:0] filter_out;	//抽取滤波输出
+	wire tx;
 	wire rdy;
 	
-	//parameter Data_len = 22'd2097152;	//数据长度2^21（根据Sigma-Delta调制器输出bit流数据量）
-    parameter Data_len = 22'd460801;	//选取0.9s的数据测试
+	parameter Data_len = 22'd2097152;	//数据长度2^21（根据Sigma-Delta调制器输出bit流数据量）
+    //parameter Data_len = 22'd460801;	//选取0.9s的数据测试
 	reg   mem[Data_len-1:0];  //定义长度为Data_len，位宽深度为1的寄存器mem
 
 	
@@ -36,9 +37,9 @@ module tb_Mul_CIC;
     // define reset time
     initial 
     begin
-        rst = 1;
-        #1500;
         rst = 0;
+        #1500;
+        rst = 1;
         clk = 0;
 	
     end
@@ -68,7 +69,7 @@ always #10 clk <= ~clk;	//实际输入时钟频率50MHz
         .clk(clk), 
         .rst(rst), 
         .Bit_in(filter_in), 
-        .Filter_out(filter_out),
+        .tx(tx),
 		.rdy(rdy)
     );
  

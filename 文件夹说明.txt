@@ -1,4 +1,4 @@
-该文件夹涉及CIC滤波器相关Matlab仿真与Verilog仿真
+该文件夹涉及CIC滤波器相关Matlab仿真与Verilog仿真，更多设计细节可以查阅有道云笔记中FPGA开发->CIC滤波以及相关数字信号处理
 
 HDL文件夹 	是利用上述CIC_Filter_R128_N5.fda设计的滤波器导出的verilog HDL 代码及其testbench文件
 CIC文献文件夹	国内相关抽取滤波器的论文
@@ -24,8 +24,12 @@ CIC_Filter_6Order.fig 6阶CIC幅频响应曲线
 CIC_FIlter_1_3_5.fig  1、3、5阶CIC滤波器幅频响应曲线对比
 CIC_FIlter_1_3_6.fig  1、3、6阶CIC滤波器幅频响应曲线对比
 Bit_Switch_Filterout_3to1_32位.fig	开关切换不同轴向信号的相关滤波前后信号：滤波前Bit流信号、开关控制信号、滤波后信号（32位）
+Bit_Switch_Filterout_3to1_20位.fig	开关切换不同轴向信号的相关滤波前后信号：滤波前Bit流信号、开关控制信号、滤波后信号（20位）
+Bit_Switch_Filterout_3to1_16位.fig	开关切换不同轴向信号的相关滤波前后信号：滤波前Bit流信号、开关控制信号、滤波后信号（16位）
 Bit_Switch_Filterout_3to1.fig		开关切换不同轴向信号的相关滤波前后信号：滤波前Bit流信号、开关控制信号、滤波后信号（64位）
 Bit_Filterout_Single30Hz.fig	单频30Hz信号经过调制器产生Bit流信号，然后经过抽取滤波：滤波前Bit流信号、滤波后信号（32位）
+Bit_Filterout_Single30Hz_20位.fig	单频30Hz信号经过调制器产生Bit流信号，然后经过抽取滤波：滤波前Bit流信号、滤波后信号（20位）
+Bit_Filterout_Single30Hz_16位.fig	单频30Hz信号经过调制器产生Bit流信号，然后经过抽取滤波：滤波前Bit流信号、滤波后信号（16位）
 
 CIC_Filter_fs512k_M128_N5.fda 	 利用MTALAB中的Filter Designer工具设计的6阶，128抽取，采样频率为512KHz的CIC滤波器
 CIC_Filter_R128_N5.fda  	 利用MTALAB中的Filter Designer工具设计的5阶，128抽取，采样频率为2MHz的CIC滤波器
