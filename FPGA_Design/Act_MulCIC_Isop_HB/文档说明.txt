@@ -2,6 +2,6 @@ Quartus_Prj 工程文件
 Rtl	Verilog HDL代码
 Sim 仿真相关代码：
 	1、tb_MUl_CIC是testbench文件、Bit_Stream是bit流测试文件、Sim_Mul_Pro之前的用来产生信号的.m文件
-	2、CIC_ISOP_HB是实际的仿真库位置，要仿真IP核要添加相关库文件.参考https://www.cnblogs.com/ninghechuan/p/7221059.html
+	2、ACT_MUCIC_ISOP_HB是实际的仿真库位置，要仿真IP核要添加相关库文件.参考https://www.cnblogs.com/ninghechuan/p/7221059.html
 	仿真时打开ModelsimSE-64 10.6d找到对应的CIC_ISOP_HB库下的tb_MUl_CIC进行仿真
 Picture	仿真结果图

@@ -60,7 +60,7 @@ for i = 1:length(data1_dec)
     end
 
 end
-real_data = real_data/2^32;
+real_data = real_data/2^44;
 t1 = 0:1/Fs_real:(length(real_data)-1)/Fs_real;
 figure(1)
 subplot(2,1,2);
@@ -132,9 +132,9 @@ for i = 1:length(data2_dec)
 
 end
 
-real_data2 = real_data2 / 2^32 ;
+real_data2 = real_data2 / 2^44 ;
 %t2 = 0:1/Fs_real:(length(real_data2)-1)/Fs_real;
-%截取5.0765~8.6765（3段滤波后信号）
+%截取0.2065~1.5265（2段滤波后信号）
 n1 = 0.2065/(1/Fs_real) ;
 n2 = 1.5265/(1/Fs_real) ;
 t2 = 0 : 1/Fs_real : (n2-n1)/Fs_real ;
